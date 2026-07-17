@@ -1,0 +1,13 @@
+Minimal Hypothesis 4.5 result
+
+source IDs: 16, 40
+source states: -0.750533, 0.732196
+vertex relative RMSE: 7.683898e-03, 6.529420e-03
+shared raw joint validity: 11.11%
+independent raw joint validity: 0.00%
+shared median coherence error: 6.844624e-02
+independent median coherence error: 3.753466e-01
+forward runtime: 1.68 s
+backward runtime: 179.06 s
+
+The minimal toy supports shared lambda over independent slot lambdas.

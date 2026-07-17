@@ -1,0 +1,15 @@
+Frozen H4.5 pooled descriptive summary
+
+slot layout:
+  eligible trials: 48
+  shared wins: 47
+  shared median clean relative RMSE: 2.371403911e-01
+  independent median clean relative RMSE: 4.702578016e-01
+
+single layout:
+  eligible trials: 48
+  shared wins: 48
+  shared median clean relative RMSE: 1.653604214e-01
+  independent median clean relative RMSE: 4.532298080e-01
+
+These are descriptive counts and medians, not formal significance claims.

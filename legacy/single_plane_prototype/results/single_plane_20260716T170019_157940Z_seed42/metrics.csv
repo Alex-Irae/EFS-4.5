@@ -1,0 +1,3 @@
+method,template_coherence_error,pair_shape_error,nearest_source_distance,max_replay_residual,raw_valid
+shared_random_reference,2.391409670e-01,5.616214973e-01,2.376680310e+00,2.382816172e-06,0
+independent_random_control,5.943866774e-01,8.100703620e-01,3.792060110e+00,2.525255502e-06,0

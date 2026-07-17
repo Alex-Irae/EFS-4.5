@@ -1,0 +1,9 @@
+Canonical single-plane H4.5 target-recovery run
+
+status: invalid
+forward frames: 6500
+forward runtime: 1159.27 s
+target interpolation was not run because the forward smoke gate failed.
+
+failure reasons:
+- terminal radial KS 0.194487 exceeds 0.15

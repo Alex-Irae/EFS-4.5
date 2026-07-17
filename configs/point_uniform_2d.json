@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "experiment": "point_uniform_2d",
+  "data_model": "independent_uniform_box_v1",
+  "particles_per_source": 1,
+  "dimension": 2,
+  "epsilon": 0.03,
+  "exponent_s": 1.0,
+  "gamma": 0.002,
+  "forward_steps": 3000,
+  "transport_time": 6.0,
+  "beta": 0.1,
+  "proximal_steps": 100
+}

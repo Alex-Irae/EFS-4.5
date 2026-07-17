@@ -1,0 +1,7 @@
+layout,role,seed,status,run_directory
+slot,primary,101,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T003023_718442Z_slot_seed101
+slot,primary,103,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T003023_767120Z_slot_seed103
+slot,primary,107,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T003023_898466Z_slot_seed107
+single,control,101,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T003024_087685Z_single_seed101
+single,control,103,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T011048_569259Z_single_seed103
+single,control,107,mixed,E:\Desktop\AnewOmni\4.5hypothesis\results\h45_search_20260716T225729_891589Z\final_runs\h45_target_20260717T012041_910912Z_single_seed107

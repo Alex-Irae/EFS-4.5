@@ -1,0 +1,17 @@
+Canonical single-plane H4.5 target-recovery run
+
+status: mixed
+forward frames: 480
+terminal radial KS: 0.13391829
+terminal angular resultant: 0.00470270
+maximum vertex relative RMSE: 2.02663034e-02
+eligible random trials: 2
+shared clean-target wins: 2
+shared median clean relative RMSE: 2.30430895e-01
+independent median clean relative RMSE: 4.16538664e-01
+median terminal commutation relative gap: 1.16542715e-01
+forward runtime: 0.06 s
+vertex runtime: 2.62 s
+target runtime: 6.40 s
+
+The classification is descriptive and makes no formal statistical claim.

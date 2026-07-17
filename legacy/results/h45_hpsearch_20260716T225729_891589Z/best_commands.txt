@@ -1,0 +1,9 @@
+# slot layout (primary)
+python run.py --layout slot --seed 101 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.00025 --forward-steps 8000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results
+python run.py --layout slot --seed 103 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.00025 --forward-steps 8000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results
+python run.py --layout slot --seed 107 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.00025 --forward-steps 8000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results
+
+# single layout (control)
+python run.py --layout single --seed 101 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.001 --forward-steps 2000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results
+python run.py --layout single --seed 103 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.001 --forward-steps 2000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results
+python run.py --layout single --seed 107 --plane-particles 2048 --epsilon 0.03 --exponent-s 3.0 --gamma 0.001 --forward-steps 2000 --beta 0.1 --proximal-steps 100 --trials 16 --vertex-sources 4 --output-root results

@@ -1,0 +1,17 @@
+Single-plane EFS hyperparameter search
+
+geometry quality: close to uniform
+epsilon: 0.01
+exponent s: 3.0
+gamma: 0.001
+transport time: 2.0
+forward steps: 2000
+beta: 0.1
+proximal steps: 50
+worst radial CDF gap: 3.811125259e-02
+worst angular resultant: 4.478431040e-04
+worst angular moment error: 2.340884878e-02
+vertex p95 relative RMSE: 1.541051605e-03
+installed active config: E:\Desktop\AnewOmni\4.5hypothesis\best_config.json
+
+Radial and angular values select the best grid point but remain descriptive, not hard proof of uniformity.

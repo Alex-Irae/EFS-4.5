@@ -1,0 +1,67 @@
+{
+  "betas": [
+    0.025,
+    0.05,
+    0.1
+  ],
+  "created_utc": "2026-07-17T18:35:27.966575+00:00",
+  "data_model": "independent_chaotic_particles_v1",
+  "data_scale": 1.0,
+  "dimension": 4,
+  "epsilons": [
+    0.01,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "exponents": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0
+  ],
+  "gammas": [
+    0.00025,
+    0.0005,
+    0.001,
+    0.002
+  ],
+  "keep_forward": 4,
+  "keep_potentials": 4,
+  "particles_per_source": 10,
+  "plane_model": "one pooled [N,D] field; no slot planes or slot centroids",
+  "proximal_steps": [
+    25,
+    50,
+    100,
+    200
+  ],
+  "quick": false,
+  "ranking": "hard gates, then worst-seed radial+direction+angular-moment score",
+  "replay_forward_candidates": 2,
+  "replay_seed": 89,
+  "replay_sources": 128,
+  "screen_seeds": [
+    42,
+    50
+  ],
+  "screen_sources": 64,
+  "stage_one_gamma": 0.0005,
+  "targets_used_for_calibration": false,
+  "transport_times": [
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "validation_seeds": [
+    61,
+    73
+  ],
+  "validation_sources": 256,
+  "vertex_sources": 1,
+  "workers_requested": 4
+}

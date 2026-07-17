@@ -1,0 +1,19 @@
+H4.5 target-recovery run (slot layout)
+
+status: mixed
+forward frames: 8000
+worst descriptive radial CDF gap: 0.10156250
+vertex particle median relative RMSE: 3.72711631e-04
+vertex particle p90 relative RMSE: 4.47072460e-04
+vertex particle p95 relative RMSE: 4.49063745e-04
+vertex particle maximum relative RMSE: 4.50303857e-04
+eligible random trials: 16
+shared clean-target wins: 16
+shared median clean relative RMSE: 2.00822995e-01
+independent median clean relative RMSE: 4.59917885e-01
+median terminal commutation relative gap: 7.86301649e-02
+forward runtime: 188.54 s
+vertex runtime: 361.77 s
+target runtime: 2461.02 s
+
+Radial and angular diagnostics are descriptive. Classification makes no formal significance claim.

@@ -1,0 +1,8 @@
+Informational joint-vector smoke; excluded from calibration ranking
+initial shape: (64, 32)
+history shape: (501, 64, 32)
+finite: True
+RMS-radius ratio: 9.504723276e-01
+vertex relative RMSE: 1.698682584e-02
+maximum replay residual: 2.550485994e-05
+runtime seconds: 1.028
