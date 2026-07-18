@@ -2,7 +2,7 @@
 
 This folder tests one narrow question:
 
-> If one shared terminal-space lambda places a complete candidate near a known source, does target-removed backward EFS return it to that source's original neighborhood?
+> Can one source-level barycentric coordinate represent a complete unordered particle set and remain stable enough through target-removed EFS replay to reconstruct a known valid source?
 
 There is one and only one EFS plane. Source ownership is metadata declared before EFS. It never changes particle forces.
 
@@ -18,19 +18,19 @@ Calibration pipeline:
 
 ## Hypothesis-to-code matrix
 
-| Requirement | Code | Why |
-| --- | --- | --- |
-| One particle population | `data.generate_chaotic_sources()` | Every particle is drawn independently from the same global distribution. |
-| Random source ownership | final shuffle and reshape in `generate_chaotic_sources()` | No center, family, or shape is created for a source. |
-| Exactly one EFS plane | `efs.forward_history()` | All `C*P` memory particles interact together. |
-| Unordered particles | `data.best_permutation()` | A source comparison does not assume permanent particle slots. |
-| Four meaningful complete sources | `data.select_source_neighbors()` | Target and neighbors are selected only in the original data plane `d1`. |
-| One positive shared lambda | `data.fit_shared_source_lambda()` | Pass-1 terminal coordinates jointly determine one vector for all `P` particles. |
-| Counterfactual target removal | `run.run_two_pass()` | Pass 1 contains the target; pass 2 independently reruns from `d1` without it. |
-| Literal EFS generation | `data.interpolate_sources()` and `efs.backward_replay()` | The terminal-fitted candidate is replayed without extra source forces. |
-| Field-change measurement | `evaluation.marginal_histogram_kl()` | Directional marginal KL describes the terminal change caused by removing one source. |
-| Physically readable error | `evaluation.relative_source_distance()` | Total Euclidean reconstruction displacement is divided by target extent. |
-| Automatic numerical calibration | `search.py` | Forward geometry and vertex replay choose `best_config.json` without using target recovery. |
+| Requirement                      | Code                                                      | Why                                                                                         |
+| -------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| One particle population          | `data.generate_chaotic_sources()`                         | Every particle is drawn independently from the same global distribution.                    |
+| Random source ownership          | final shuffle and reshape in `generate_chaotic_sources()` | No center, family, or shape is created for a source.                                        |
+| Exactly one EFS plane            | `efs.forward_history()`                                   | All `C*P` memory particles interact together.                                               |
+| Unordered particles              | `data.best_permutation()`                                 | A source comparison does not assume permanent particle slots.                               |
+| Four meaningful complete sources | `data.select_source_neighbors()`                          | Target and neighbors are selected only in the original data plane `d1`.                     |
+| One positive shared lambda       | `data.fit_shared_source_lambda()`                         | Pass-1 terminal coordinates jointly determine one vector for all `P` particles.             |
+| Counterfactual target removal    | `run.run_two_pass()`                                      | Pass 1 contains the target; pass 2 independently reruns from `d1` without it.               |
+| Literal EFS generation           | `data.interpolate_sources()` and `efs.backward_replay()`  | The terminal-fitted candidate is replayed without extra source forces.                      |
+| Field-change measurement         | `evaluation.marginal_histogram_kl()`                      | Directional marginal KL describes the terminal change caused by removing one source.        |
+| Physically readable error        | `evaluation.relative_source_distance()`                   | Total Euclidean reconstruction displacement is divided by target extent.                    |
+| Automatic numerical calibration  | `search.py`                                               | Forward geometry and vertex replay choose `best_config.json` without using target recovery. |
 
 ## Objects and shapes
 
@@ -308,8 +308,6 @@ Search evaluates only forward geometry and exact vertex replay. Target errors ne
 
 Preferred Python version: `3.10`.
 
-Create the environment yourself, then install:
-
 ```powershell
 pip install -r req.txt
 ```
@@ -317,8 +315,6 @@ pip install -r req.txt
 Dependencies are only NumPy and Matplotlib. There is no Torch, SciPy, pandas, YAML, CUDA, ROCm, or test framework.
 
 ## Commands
-
-Run from `E:\Desktop\AnewOmni\4.5hypothesis`.
 
 Calibrate EFS with four worker processes:
 
@@ -395,27 +391,27 @@ python evaluation.py
 
 ## Parameters
 
-| CLI argument | Default | Meaning |
-| --- | ---: | --- |
-| `--protocol` | `two-pass` | canonical counterfactual or preserved `single-pass-toy` |
-| `--seed` | `42` | deterministic NumPy seed |
-| `--source-count` | `512` | pass-2 memory sources; pass 1 adds one target |
-| `--heldout-sources` | `1` | must equal one for the canonical two-pass protocol |
-| `--distribution` | `chaotic` | `chaotic` mixture or uniform-box point control |
-| `--particles-per-source` | `10` | independent particles randomly grouped per source |
-| `--dimension` | `4` | values per particle |
-| `--parents` | `4` | nearest complete sources used in the fit |
-| `--vertex-sources` | `4` | exact memory sources used for inverse checking |
-| `--data-scale` | `1.0` | global coordinate scale |
-| `--epsilon` | config, else `0.03` | EFS smoothing |
-| `--exponent-s` | config, else `3.0` | inverse-power exponent |
-| `--gamma` | config, else `0.001` | Euler step |
-| `--forward-steps` | config, else `2000` | saved forward frames |
-| `--beta` | config, else `0.10` | replay update step |
-| `--proximal-steps` | config, else `100` | fixed-point updates per frame |
-| `--lambda-iterations` | `1000` | maximum projected-gradient iterations |
-| `--log-every` | `10` | full forward or backward frames between logs |
-| `--workers` | `1` | concurrent passive replay batches sharing one history |
+| CLI argument             | Default              | Meaning                                                 |
+| ------------------------ | --------------------:| ------------------------------------------------------- |
+| `--protocol`             | `two-pass`           | canonical counterfactual or preserved `single-pass-toy` |
+| `--seed`                 | `42`                 | deterministic NumPy seed                                |
+| `--source-count`         | `512`                | pass-2 memory sources; pass 1 adds one target           |
+| `--heldout-sources`      | `1`                  | must equal one for the canonical two-pass protocol      |
+| `--distribution`         | `chaotic`            | `chaotic` mixture or uniform-box point control          |
+| `--particles-per-source` | `10`                 | independent particles randomly grouped per source       |
+| `--dimension`            | `4`                  | values per particle                                     |
+| `--parents`              | `4`                  | nearest complete sources used in the fit                |
+| `--vertex-sources`       | `4`                  | exact memory sources used for inverse checking          |
+| `--data-scale`           | `1.0`                | global coordinate scale                                 |
+| `--epsilon`              | config, else `0.03`  | EFS smoothing                                           |
+| `--exponent-s`           | config, else `3.0`   | inverse-power exponent                                  |
+| `--gamma`                | config, else `0.001` | Euler step                                              |
+| `--forward-steps`        | config, else `2000`  | saved forward frames                                    |
+| `--beta`                 | config, else `0.10`  | replay update step                                      |
+| `--proximal-steps`       | config, else `100`   | fixed-point updates per frame                           |
+| `--lambda-iterations`    | `1000`               | maximum projected-gradient iterations                   |
+| `--log-every`            | `10`                 | full forward or backward frames between logs            |
+| `--workers`              | `1`                  | concurrent passive replay batches sharing one history   |
 
 The point control uses `epsilon=0.03`, `s=1`, `gamma=0.002`, 3,000 frames, and 100 proximal updates. Its transport time is $\tau=6$.
 
@@ -438,24 +434,24 @@ Read outputs in the following order.
 
 ## 1. Forward hard gates
 
-| Metric | Input | Output | Preferred | Hard failure |
-| --- | --- | --- | ---: | --- |
-| finite | all forward arrays | boolean | true | false |
-| RMS-radius ratio | initial and terminal planes | terminal radius / initial radius | descriptive | outside `[0.05,5]` |
-| covariance ratio | terminal covariance eigenvalues | minimum / maximum | near `1` | below `1e-3` |
-| center drift | initial and terminal centers | Euclidean movement | near machine precision | descriptive |
+| Metric           | Input                           | Output                           | Preferred              | Hard failure       |
+| ---------------- | ------------------------------- | -------------------------------- | ----------------------:| ------------------ |
+| finite           | all forward arrays              | boolean                          | true                   | false              |
+| RMS-radius ratio | initial and terminal planes     | terminal radius / initial radius | descriptive            | outside `[0.05,5]` |
+| covariance ratio | terminal covariance eigenvalues | minimum / maximum                | near `1`               | below `1e-3`       |
+| center drift     | initial and terminal centers    | Euclidean movement               | near machine precision | descriptive        |
 
 Both passes must satisfy these gates. Passing means neither field exploded, collapsed to a point, or lost almost all dimensional support. It does not prove target quality.
 
 ## 2. Forward uniform-ball diagnostics
 
-| Metric | Reference | Meaning |
-| --- | ---: | --- |
-| radial CDF gap | `0` | maximum gap from a fitted uniform-ball radial CDF |
-| radial CV in `D=4` | `0.204124` | expected radial spread |
-| ten radial zones | `0.10` each | equal-probability radial occupancy |
-| angular resultant | `0` | no preferred direction |
-| angular moment error | `0` | directional second moment equals $I/D$ |
+| Metric               | Reference   | Meaning                                           |
+| -------------------- | -----------:| ------------------------------------------------- |
+| radial CDF gap       | `0`         | maximum gap from a fitted uniform-ball radial CDF |
+| radial CV in `D=4`   | `0.204124`  | expected radial spread                            |
+| ten radial zones     | `0.10` each | equal-probability radial occupancy                |
+| angular resultant    | `0`         | no preferred direction                            |
+| angular moment error | `0`         | directional second moment equals $I/D$            |
 
 Practical descriptive guides:
 
@@ -471,11 +467,11 @@ Input: the same retained particle identities at the two terminal endpoints.
 
 Output: one directional histogram KL per coordinate and its mean across coordinates.
 
-| Value | Interpretation |
-| ---: | --- |
-| `0` | identical smoothed coordinate histograms |
-| near `0` | removing one source barely changed the terminal marginals |
-| larger positive value | visible pass-dependent field shift |
+| Value                 | Interpretation                                            |
+| ---------------------:| --------------------------------------------------------- |
+| `0`                   | identical smoothed coordinate histograms                  |
+| near `0`              | removing one source barely changed the terminal marginals |
+| larger positive value | visible pass-dependent field shift                        |
 
 There is no universal hard threshold because the number depends on sample count, bin count, smoothing, dimension, and coordinate system. The code fixes 48 shared bins and a `0.5` pseudocount so runs are internally comparable. KL is directional, so both orders are reported.
 
@@ -497,13 +493,13 @@ e_{v,p}
 }{\sigma_{\mathrm{memory}}}.
 $$
 
-| Relative error | Interpretation |
-| ---: | --- |
-| `0` | exact replay |
-| below `0.001` | exceptionally accurate |
-| `0.001` to `0.01` | good |
-| `0.01` to `0.10` | increasingly questionable |
-| above `0.10` | hard failure |
+| Relative error    | Interpretation            |
+| -----------------:| ------------------------- |
+| `0`               | exact replay              |
+| below `0.001`     | exceptionally accurate    |
+| `0.001` to `0.01` | good                      |
+| `0.01` to `0.10`  | increasingly questionable |
+| above `0.10`      | hard failure              |
 
 Vertex replay tests the inverse only at known EFS particles. It does not test lambda, interpolation, novelty, or decoded validity.
 
@@ -546,14 +542,14 @@ $$
 
 The point control also saves the unnormalized Euclidean values `direct_point_distance`, `generated_point_distance`, and `nearest_parent_point_distance`. Zero is optimal. Unlike the relative value, these remain in raw coordinate units.
 
-| Value | Meaning |
-| ---: | --- |
-| `0` | exact target recovery |
-| below `0.10` | error below 10% of target extent |
-| `0.10` to `0.25` | close but visible error |
-| `0.25` to `0.50` | large error |
-| `1` | displacement equals the target's full extent |
-| above `1` | very poor recovery |
+| Value            | Meaning                                      |
+| ----------------:| -------------------------------------------- |
+| `0`              | exact target recovery                        |
+| below `0.10`     | error below 10% of target extent             |
+| `0.10` to `0.25` | close but visible error                      |
+| `0.25` to `0.50` | large error                                  |
+| `1`              | displacement equals the target's full extent |
+| above `1`        | very poor recovery                           |
 
 These bands are interpretation guides, not statistical or biochemical validity thresholds.
 
@@ -593,15 +589,15 @@ $$
 
 ## 7. Secondary reconstruction metrics
 
-| Metric | Best | Meaning |
-| --- | ---: | --- |
-| set RMSE | `0` | permutation-invariant coordinate-standardized error |
-| nearest-parent relative distance | `0` | retrieval-only baseline |
-| EFS/parent ratio | below `1` | replay beats returning the nearest source |
-| internal-relation RMSE | `0` | error in sorted within-source pair distances |
-| terminal gap | `0` | pass-2 candidate agrees with the known pass-1 target endpoint |
-| replay residual | near `0`, usually below `1e-5` | fixed-point equation was solved accurately |
-| memory-distance ratio | around `1` | generated locality resembles held-out target locality |
+| Metric                           | Best                           | Meaning                                                       |
+| -------------------------------- | ------------------------------:| ------------------------------------------------------------- |
+| set RMSE                         | `0`                            | permutation-invariant coordinate-standardized error           |
+| nearest-parent relative distance | `0`                            | retrieval-only baseline                                       |
+| EFS/parent ratio                 | below `1`                      | replay beats returning the nearest source                     |
+| internal-relation RMSE           | `0`                            | error in sorted within-source pair distances                  |
+| terminal gap                     | `0`                            | pass-2 candidate agrees with the known pass-1 target endpoint |
+| replay residual                  | near `0`, usually below `1e-5` | fixed-point equation was solved accurately                    |
+| memory-distance ratio            | around `1`                     | generated locality resembles held-out target locality         |
 
 A tiny replay residual cannot rescue poor target recovery. It only says the backward numerical equation was solved.
 
