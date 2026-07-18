@@ -1382,12 +1382,12 @@ No integration code is added during that explanation.
 | ------------------------------------ | ---------------------------------------------------------------------------------------------- |
 | Block                                | One ANewOmni residue or molecular token with feature and coordinate latent                     |
 | Slot                                 | One ordered topology position in a fixed-length peptide                                        |
-| Complete complex                     | One intact training peptide and its target/context metadata                                    |
+| Complete complex (source)            | One intact training peptide and its target/context metadata                                    |
 | Particle                             | One row operated on by one EFS system                                                          |
 | Joint particle                       | One complete flattened peptide latent                                                          |
 | Local memory                         | Bounded empirical subset used to fit one EFS system                                            |
 | Barycentric seed                     | Convex combination of terminal training particles                                              |
-| Shared \(\lambda\)                   | One coefficient vector applied to corresponding slots of complete sources                      |
+| Shared ($\lambda$\)                  | One coefficient vector applied to corresponding slots of complete sources                      |
 | Initialization provenance            | Source IDs, slot correspondence, and \(\lambda\)                                               |
 | Pathwise force provenance            | Recorded force terms along one realized EFS trajectory                                         |
 | Counterfactual algorithmic influence | Output change under a complete rerun after an intervention                                     |
