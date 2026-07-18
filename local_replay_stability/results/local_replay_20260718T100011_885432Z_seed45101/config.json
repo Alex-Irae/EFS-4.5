@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-07-18T10:08:17.572551+00:00",
+  "seed": 45101,
+  "protocol": "created_terminal_pair_displacement",
+  "distribution": "constant-density thick spiral tube",
+  "particles": 768,
+  "dimensions": [
+    2,
+    4
+  ],
+  "pairs": 6,
+  "alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.4,
+    0.49
+  ],
+  "betas": [
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.4
+  ],
+  "gamma": 0.002,
+  "epsilon": 0.03,
+  "forward_steps": 2000,
+  "proximal_steps": 50,
+  "tube_width": 0.12,
+  "data_scale": 1.0,
+  "workers": 5,
+  "algebra_self_check": {
+    "efs": {
+      "field_max_abs_error": 2.220446049250313e-16,
+      "gradient_directional_error": 2.0229817820904827e-10,
+      "center_force_norm": 9.321907481344796e-16,
+      "sparse_history_max_abs_error": 0.0
+    },
+    "created_targets": {
+      "created_pair_max_error": 6.938893903907228e-17
+    }
+  },
+  "forward": {
+    "2": {
+      "exponent_s": 1.0,
+      "forward_seconds": 34.807721000004676,
+      "initial": {
+        "rms_radius": 1.0,
+        "mean_pair_distance": 1.2804326101674135,
+        "radial_cdf_gap": 0.15087799441679195,
+        "covariance_ratio": 0.7536200975605669
+      },
+      "terminal": {
+        "rms_radius": 0.7520153710171866,
+        "mean_pair_distance": 0.9633951228251105,
+        "radial_cdf_gap": 0.06756231256108669,
+        "covariance_ratio": 0.9981208707365983
+      },
+      "radius_ratio": 0.7520153710171866,
+      "best_beta": 0.025
+    },
+    "4": {
+      "exponent_s": 2.0,
+      "forward_seconds": 40.151356799993664,
+      "initial": {
+        "rms_radius": 1.0,
+        "mean_pair_distance": 1.2811739688317785,
+        "radial_cdf_gap": 0.18451856499195454,
+        "covariance_ratio": 0.0012402818526605673
+      },
+      "terminal": {
+        "rms_radius": 0.7696712397060567,
+        "mean_pair_distance": 1.0434739676390494,
+        "radial_cdf_gap": 0.3072692786091594,
+        "covariance_ratio": 0.9691172261592463
+      },
+      "radius_ratio": 0.7696712397060567,
+      "best_beta": 0.4
+    }
+  },
+  "total_seconds": 485.7116893999919
+}

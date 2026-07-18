@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-07-18T09:59:01.494143+00:00",
+  "seed": 45101,
+  "protocol": "created_terminal_pair_displacement",
+  "distribution": "constant-density thick spiral tube",
+  "particles": 128,
+  "dimensions": [
+    2,
+    4
+  ],
+  "pairs": 2,
+  "alphas": [
+    0.0,
+    0.25,
+    0.49
+  ],
+  "betas": [
+    0.05,
+    0.1
+  ],
+  "gamma": 0.002,
+  "epsilon": 0.03,
+  "forward_steps": 80,
+  "proximal_steps": 10,
+  "tube_width": 0.12,
+  "data_scale": 1.0,
+  "workers": 2,
+  "algebra_self_check": {
+    "efs": {
+      "field_max_abs_error": 2.220446049250313e-16,
+      "gradient_directional_error": 2.0229817820904827e-10,
+      "center_force_norm": 9.321907481344796e-16,
+      "sparse_history_max_abs_error": 0.0
+    },
+    "created_targets": {
+      "created_pair_max_error": 6.938893903907228e-17
+    }
+  },
+  "forward": {
+    "2": {
+      "exponent_s": 1.0,
+      "forward_seconds": 0.024823399988235906,
+      "initial": {
+        "rms_radius": 1.0,
+        "mean_pair_distance": 1.2880414656870713,
+        "radial_cdf_gap": 0.17755493990251026,
+        "covariance_ratio": 0.8670557637738132
+      },
+      "terminal": {
+        "rms_radius": 0.9228090884520558,
+        "mean_pair_distance": 1.1897914232715685,
+        "radial_cdf_gap": 0.15782550374597715,
+        "covariance_ratio": 0.8763466242435266
+      },
+      "radius_ratio": 0.9228090884520558,
+      "best_beta": 0.1
+    },
+    "4": {
+      "exponent_s": 2.0,
+      "forward_seconds": 0.025287299999035895,
+      "initial": {
+        "rms_radius": 0.9999999999999999,
+        "mean_pair_distance": 1.2864694336866407,
+        "radial_cdf_gap": 0.17930897116494085,
+        "covariance_ratio": 0.001136822025411632
+      },
+      "terminal": {
+        "rms_radius": 0.9480735140901241,
+        "mean_pair_distance": 1.2343265343267456,
+        "radial_cdf_gap": 0.18788130899485872,
+        "covariance_ratio": 0.026531198652556466
+      },
+      "radius_ratio": 0.9480735140901242,
+      "best_beta": 0.1
+    }
+  },
+  "total_seconds": 3.3838107000046875
+}

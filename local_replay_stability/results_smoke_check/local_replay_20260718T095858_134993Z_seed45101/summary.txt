@@ -1,0 +1,18 @@
+Created-target local EFS replay stability
+
+Targets are exact memory vertices with known original positions.
+Terminal seeds are created by moving nearest-neighbor pairs toward each other.
+
+D=2
+  beta=0.05: vertex_error=4.422651e-02, displaced_error=4.419992e-02, safe_alpha=0.00, swaps=0, collapses=2, max_residual=5.811e-04
+  beta=0.1 selected: vertex_error=2.343526e-02, displaced_error=2.355453e-02, safe_alpha=0.00, swaps=0, collapses=2, max_residual=2.942e-04
+
+D=4
+  beta=0.05: vertex_error=8.478411e-02, displaced_error=7.387949e-02, safe_alpha=0.00, swaps=0, collapses=2, max_residual=2.117e-03
+  beta=0.1 selected: vertex_error=4.164503e-02, displaced_error=3.681955e-02, safe_alpha=0.00, swaps=0, collapses=2, max_residual=1.293e-03
+
+Interpretation:
+alpha is the fraction of one terminal neighbor spacing moved toward the other vertex.
+safe_alpha is the largest tested alpha with median pair-relative error <= 10%, no swaps, and no collapses.
+beta changes the proximal solve. Similar converged results across beta mean the field, not beta, determines arrival.
+total runtime: 3.38 s
