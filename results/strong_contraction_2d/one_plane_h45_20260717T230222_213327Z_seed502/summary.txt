@@ -1,0 +1,30 @@
+Single-plane H4.5 held-out reconstruction
+
+status: complete
+parameter source: saved config E:\Desktop\AnewOmni\4.5hypothesis\configs\strong_contraction_2d.json
+memory field: 4096 particles in one plane
+memory sources: 512
+held-out complete targets: 16
+forward radial CDF gap: 0.36573722
+forward radius ratio: 0.38785807
+vertex median relative RMSE: 1.32227351e-03
+vertex p95 relative RMSE: 3.77022984e-03
+vertex maximum relative RMSE: 8.25601155e-03
+median terminal shared-lambda fit RMSE: 2.17299993e-01
+
+method: shared_lambda
+result: no consistent target improvement
+EFS beats direct interpolation: 2/16
+EFS beats closest parent: 6/16
+median direct relative distance: 0.36998156
+median EFS relative distance: 0.44088822
+median direct target RMSE: 0.35615860
+median EFS target RMSE: 0.42162157
+median EFS/direct ratio: 1.20300932
+p90 EFS/direct ratio: 1.53037338
+maximum EFS/direct ratio: 1.76652096
+
+Interpretation:
+A ratio below 1 means EFS moved a shared interpolation closer to a real source that was absent from its field.
+Vertex replay only checks inversion at exact memory endpoints.
+total runtime: 13825.88 s

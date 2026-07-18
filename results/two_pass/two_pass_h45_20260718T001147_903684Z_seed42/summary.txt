@@ -1,0 +1,20 @@
+Two-pass single-plane H4.5
+
+status: complete
+target source ID: 259
+saved d1 parent IDs: [373, 160, 264, 30]
+shared lambda fitted in pass 1 du: [0.       0.507967 0.128492 0.363541]
+pass-1 joint lambda fit RMSE: 5.46420948e-01
+mean KL(pass 1 || pass 2): 1.75797744e-04
+mean KL(pass 2 || pass 1): 1.73947321e-04
+mean retained-particle terminal displacement: 2.54793721e-03
+pass-2 terminal start error: 5.46261969e-01
+arrival error at d1: 6.76687965e-01
+terminal-to-arrival amplification: 1.23876089e+00
+vertex maximum relative RMSE: 3.71148259e-03
+target replay residual: 1.54901228e-05
+
+Interpretation:
+KL describes how much removing one source changed terminal coordinate marginals.
+The amplification ratio measures whether the pass-2 terminal mismatch grew during backward replay.
+total runtime: 5341.28 s
