@@ -23,7 +23,7 @@ The EFS field itself was numerically usable: accepted runs stayed finite and exa
 - shared convex seeds fitted arbitrary complete sources poorly, even with $K=128$ parents;
 - replay did not preserve the improvement obtained from additional parents;
 - close terminal seeds were not reliably separated into their original identities;
-- smooth source-level lambda paths produced p95 step amplification of $55.59$ in the final run;
+- smooth source-level lambda paths produced p95 step amplification of 55.59 in the final run;
 - no experiment could measure decoded molecular validity on the available hardware.
 
 See [`docs/experiment_ledger.md`](docs/experiment_ledger.md) for the evidence and failure justification of every tested variant.
@@ -145,8 +145,6 @@ The decisive distinction is exact-vertex versus off-vertex behavior. A low verte
 ```powershell
 python -m pip install -r requirements.txt
 ```
-
-Environment creation and package installation remain user-controlled.
 
 ## Main commands
 
