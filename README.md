@@ -4,7 +4,17 @@ This repository contains the complete CPU research trail for Hypothesis 4.5: use
 
 The experiments are organized chronologically under `experiments/`. Reusable one-plane EFS code remains at the repository root. Scientific documents and the consolidated result ledger live under `docs/`.
 
-## Current conclusion
+## Current Conclusion on EFS x AnewOMNI via H4.5
+
+Exact vanilla EFS is computationally incompatible with the full ANewOmni corpus, while complete-peptide joint EFS introduces an impractical dimensional regime.
+
+H4.5 tested whether shared complete-source initialization could preserve source-level coherence while retaining tractable 11-dimensional slot-wise EFS.
+
+Across controlled synthetic diagnostics, shared initialization did not supply persistent coupling, did not reliably reconstruct held-out complete sources, and did not outperform direct interpolation consistently.
+
+H4.5 is therefore not supported as a practical mechanism for integrating vanilla EFS with ANewOmni. Future work would require either a scalable approximate interaction model, an explicitly coupled structured EFS formulation, or a substantially different representation.
+
+---
 
 The passive shared-lambda route is **not validated and is stopped in its current form**.
 
@@ -207,16 +217,6 @@ Git tracks the evidence needed for inspection:
 Large `.npy`, generated `.npz`, and `__pycache__` files are ignored. They are expensive runtime state rather than readable evidence, and the final saved history exceeded GitHub's normal single-file limit. Re-run the owning experiment to recreate them locally.
 
 No result directory is overwritten by the runners.
-
-### Conclusion on EFS x AnewOMNI via H4.5
-
-Exact vanilla EFS is computationally incompatible with the full ANewOmni corpus, while complete-peptide joint EFS introduces an impractical dimensional regime. 
-
-H4.5 tested whether shared complete-source initialization could preserve source-level coherence while retaining tractable 11-dimensional slot-wise EFS. 
-
-Across controlled synthetic diagnostics, shared initialization did not supply persistent coupling, did not reliably reconstruct held-out complete sources, and did not outperform direct interpolation consistently. 
-
-H4.5 is therefore not supported as a practical mechanism for integrating vanilla EFS with ANewOmni. Future work would require either a scalable approximate interaction model, an explicitly coupled structured EFS formulation, or a substantially different representation.
 
 ### Main Sources
 
