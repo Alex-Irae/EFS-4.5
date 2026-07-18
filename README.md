@@ -24,17 +24,17 @@ See [`docs/experiment_ledger.md`](docs/experiment_ledger.md) for the evidence an
 
 ## Hypothesis-to-code matrix
 
-| Requirement | Implementation | Why |
-| --- | --- | --- |
-| One pooled particle field | `efs.py` | Every memory particle participates in the same vanilla EFS interaction. |
-| Source ownership as metadata | `data.py` | Group membership never changes particle forces. |
-| Unordered source matching | `data.best_permutation()` | Synthetic source rows have no meaningful fixed order. |
-| One complete-source lambda | `data.fit_shared_source_lambda()` | One coefficient vector is fitted over all $P\times D$ values. |
-| Forward and backward diagnostics | `evaluation.py` | Separates field failure, exact-vertex inversion, and off-vertex generation. |
-| Canonical reconstruction runner | `run.py` | Runs the one-plane single-pass toys or two-pass target-removal protocol. |
-| Numerical calibration | `search.py` | Selects EFS parameters without using target-recovery outcomes. |
-| Historical model variants | `experiments/01` through `03` | Preserves equations that differ from the canonical pooled model. |
-| Final mechanism tests | `experiments/08` and `09` | Tests identity compression, parent capacity, local sensitivity, and path continuity. |
+| Requirement                      | Implementation                    | Why                                                                                  |
+| -------------------------------- | --------------------------------- | ------------------------------------------------------------------------------------ |
+| One pooled particle field        | `efs.py`                          | Every memory particle participates in the same vanilla EFS interaction.              |
+| Source ownership as metadata     | `data.py`                         | Group membership never changes particle forces.                                      |
+| Unordered source matching        | `data.best_permutation()`         | Synthetic source rows have no meaningful fixed order.                                |
+| One complete-source lambda       | `data.fit_shared_source_lambda()` | One coefficient vector is fitted over all $P\times D$ values.                        |
+| Forward and backward diagnostics | `evaluation.py`                   | Separates field failure, exact-vertex inversion, and off-vertex generation.          |
+| Canonical reconstruction runner  | `run.py`                          | Runs the one-plane single-pass toys or two-pass target-removal protocol.             |
+| Numerical calibration            | `search.py`                       | Selects EFS parameters without using target-recovery outcomes.                       |
+| Historical model variants        | `experiments/01` through `03`     | Preserves equations that differ from the canonical pooled model.                     |
+| Final mechanism tests            | `experiments/08` and `09`         | Tests identity compression, parent capacity, local sensitivity, and path continuity. |
 
 ## Mathematical formulation
 
@@ -97,31 +97,31 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
 
 ## Experiment index
 
-| Folder | Question | Result |
-| --- | --- | --- |
-| [`01_separate_fields`](experiments/01_separate_fields/) | Does one field per declared slot preserve coherence? | Numerically positive after repair, but rejected because synthetic particles had no real slot identity. |
-| [`02_single_plane_witness`](experiments/02_single_plane_witness/) | Is shared lambda cleaner than independent per-particle weights in one field? | Shared was cleaner, but both outputs failed validity and only one witness was tested. |
-| [`03_slot_single_calibration`](experiments/03_slot_single_calibration/) | Can geometry and replay be calibrated, and does shared beat a constructed independent control? | Vertex replay worked; constructed shared targets favored the tested algebra and were not decisive. |
-| [`04_heldout_reconstruction`](experiments/04_heldout_reconstruction/) | Can four nearby sources reconstruct an absent random complete source? | Negative: EFS beat direct interpolation in only $3/16$ trials. |
-| [`05_point_interpolation`](experiments/05_point_interpolation/) | Does the mechanism work when one source is one 2D point? | Mixed: $33/64$ wins, but no multi-particle coherence was tested. |
-| [`06_strong_contraction`](experiments/06_strong_contraction/) | Do more forward steps and stronger contraction repair recovery? | Negative: $2/16$ wins and a shell-like endpoint. |
-| [`07_two_pass_reconstruction`](experiments/07_two_pass_reconstruction/) | Is target removal the main failure cause? | No: the field shift was tiny and the shared terminal fit was already poor. |
-| [`08_local_replay_stability`](experiments/08_local_replay_stability/) | Does a clean homogeneous field restore identities after terminal compression? | No in the clean 2D control; compressed pairs remained compressed. |
-| [`09_final_diagnostics`](experiments/09_final_diagnostics/) | Do more parents, local stability, and smooth lambda paths rescue H4.5? | Stop: $K=128$ remained inaccurate, replay worsened, and path amplification was high. |
+| Folder                                                                  | Question                                                                                       | Result                                                                                                 |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| [`01_separate_fields`](experiments/01_separate_fields/)                 | Does one field per declared slot preserve coherence?                                           | Numerically positive after repair, but rejected because synthetic particles had no real slot identity. |
+| [`02_single_plane_witness`](experiments/02_single_plane_witness/)       | Is shared lambda cleaner than independent per-particle weights in one field?                   | Shared was cleaner, but both outputs failed validity and only one witness was tested.                  |
+| [`03_slot_single_calibration`](experiments/03_slot_single_calibration/) | Can geometry and replay be calibrated, and does shared beat a constructed independent control? | Vertex replay worked; constructed shared targets favored the tested algebra and were not decisive.     |
+| [`04_heldout_reconstruction`](experiments/04_heldout_reconstruction/)   | Can four nearby sources reconstruct an absent random complete source?                          | Negative: EFS beat direct interpolation in only $3/16$ trials.                                         |
+| [`05_point_interpolation`](experiments/05_point_interpolation/)         | Does the mechanism work when one source is one 2D point?                                       | Mixed: $33/64$ wins, but no multi-particle coherence was tested.                                       |
+| [`06_strong_contraction`](experiments/06_strong_contraction/)           | Do more forward steps and stronger contraction repair recovery?                                | Negative: $2/16$ wins and a shell-like endpoint.                                                       |
+| [`07_two_pass_reconstruction`](experiments/07_two_pass_reconstruction/) | Is target removal the main failure cause?                                                      | No: the field shift was tiny and the shared terminal fit was already poor.                             |
+| [`08_local_replay_stability`](experiments/08_local_replay_stability/)   | Does a clean homogeneous field restore identities after terminal compression?                  | No in the clean 2D control; compressed pairs remained compressed.                                      |
+| [`09_final_diagnostics`](experiments/09_final_diagnostics/)             | Do more parents, local stability, and smooth lambda paths rescue H4.5?                         | Stop: $K=128$ remained inaccurate, replay worsened, and path amplification was high.                   |
 
 Each experiment owns its code when that code differs from the canonical root mechanism, plus its CSV, JSON, summaries, and figures.
 
 ## Result interpretation
 
-| Metric | What it measures | Desired value | What it does not prove |
-| --- | --- | --- | --- |
-| Vertex replay error | Exact terminal memory particles returning to their known initial positions | Below $10\%$ of field scale; accepted runs were usually below $1\%$ | Validity of a new off-vertex source |
-| Terminal fit RMSE | Distance from a shared convex seed to its terminal target | Near zero; final practical target was at most `0.10` | Successful replay |
-| Replay target RMSE | Distance from backward output to the known original target | Lower than direct interpolation | Decoded molecular validity |
-| Replay/direct ratio | EFS error divided by direct same-lambda error | Below `1` | Novelty or usefulness by itself |
-| Local amplification | Output change divided by a small terminal perturbation | Smooth; p95 practical flag below `10` | Whole-source continuity |
-| Path step amplification | Consecutive output step divided by consecutive terminal step | Smooth without spikes; p95 practical flag below `10` | Chemical validity |
-| Radial CDF gap | Descriptive mismatch from a fitted uniform ball | Smaller is geometrically cleaner | A formal goodness-of-fit test or inverse validity |
+| Metric                  | What it measures                                                           | Desired value                                                       | What it does not prove                            |
+| ----------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------- |
+| Vertex replay error     | Exact terminal memory particles returning to their known initial positions | Below $10\%$ of field scale; accepted runs were usually below $1\%$ | Validity of a new off-vertex source               |
+| Terminal fit RMSE       | Distance from a shared convex seed to its terminal target                  | Near zero; final practical target was at most `0.10`                | Successful replay                                 |
+| Replay target RMSE      | Distance from backward output to the known original target                 | Lower than direct interpolation                                     | Decoded molecular validity                        |
+| Replay/direct ratio     | EFS error divided by direct same-lambda error                              | Below `1`                                                           | Novelty or usefulness by itself                   |
+| Local amplification     | Output change divided by a small terminal perturbation                     | Smooth; p95 practical flag below `10`                               | Whole-source continuity                           |
+| Path step amplification | Consecutive output step divided by consecutive terminal step               | Smooth without spikes; p95 practical flag below `10`                | Chemical validity                                 |
+| Radial CDF gap          | Descriptive mismatch from a fitted uniform ball                            | Smaller is geometrically cleaner                                    | A formal goodness-of-fit test or inverse validity |
 
 The decisive distinction is exact-vertex versus off-vertex behavior. A low vertex error proves that the numerical inverse works where the field already contains a known particle. H4.5 requires stable behavior between those known particles.
 
@@ -207,3 +207,8 @@ Git tracks the evidence needed for inspection:
 Large `.npy`, generated `.npz`, and `__pycache__` files are ignored. They are expensive runtime state rather than readable evidence, and the final saved history exceeded GitHub's normal single-file limit. Re-run the owning experiment to recreate them locally.
 
 No result directory is overwritten by the runners.
+
+### Main Sources
+
+"DATA GENERATION WITHOUT FUNCTION ESTIMATION, Hadi Daneshmand1 and Ashkan Soleymani2, arXiv:2507.08239v1 [cs.LG] 11 Jul 2025"
+"Programming Biomolecular Interactions with All-Atom Generative Model, KONG & al., doi: https://doi.org/10.64898/2026.03.12.711044"

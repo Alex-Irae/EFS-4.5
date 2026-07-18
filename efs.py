@@ -1,5 +1,5 @@
 """Single-plane Estimation-Free Sampling (EFS) mathematics.
-
+cf : "DATA GENERATION WITHOUT FUNCTION ESTIMATION, Hadi Daneshmand1 and Ashkan Soleymani2, arXiv:2507.08239v1 [cs.LG] 11 Jul 2025"
 Purpose:
     Evolve one pooled particle field, carry passive held-out sources forward,
     and replay generated sources backward through the saved field.
