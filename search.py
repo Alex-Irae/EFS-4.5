@@ -9,7 +9,7 @@ Outputs:
     A timestamped search directory and, after a full search, the active
     ``best_config.json`` beside ``run.py``.
 Exact command:
-    python search.py --workers 4 --output-root results
+    python search.py --workers 4 --output-root experiments\\03_slot_single_calibration\\results
 """
 
 from __future__ import annotations
@@ -924,7 +924,11 @@ def build_parser() -> argparse.ArgumentParser:
     """Define search, resume, and quick-path arguments."""
     parser = argparse.ArgumentParser(description="Search one-plane EFS hyperparameters.")
     parser.add_argument("--workers", type=int, default=4, help="Independent process workers; maximum four.")
-    parser.add_argument("--output-root", default="results", help="Parent for a new timestamped search directory.")
+    parser.add_argument(
+        "--output-root",
+        default="experiments/03_slot_single_calibration/results",
+        help="Parent for a new timestamped search directory.",
+    )
     parser.add_argument(
         "--resume", type=Path, default=None, help="Existing search directory whose finished CSV rows are skipped."
     )

@@ -1,3 +1,7 @@
 __pycache__/
+*.py[cod]
 *.npz
-
+*.npy
+!experiments/07_two_pass_reconstruction/results/two_pass_h45_20260718T001147_903684Z_seed42/pass1_reference.npz
+.venv/
+venv/

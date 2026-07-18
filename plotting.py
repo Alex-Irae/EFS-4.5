@@ -8,7 +8,9 @@ Dependencies:
 Outputs:
     PNG files inside the supplied run directory.
 Exact command:
-    python plotting.py results\\<run-directory>
+    python plotting.py experiments\\07_two_pass_reconstruction\\results\\<run-directory>
+
+The selected local run must still contain its generated ``samples.npz``.
 """
 
 from __future__ import annotations

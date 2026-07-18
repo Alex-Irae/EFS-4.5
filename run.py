@@ -8,7 +8,7 @@ Dependencies:
 Outputs:
     One new timestamped directory under ``--output-root``.
 Exact command:
-    python run.py --output-root results
+    python run.py --output-root experiments\\07_two_pass_reconstruction\\results
 """
 
 from __future__ import annotations
@@ -1152,7 +1152,11 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--log-every", type=int, default=10, help="Print forward/backward state every this many full frames.")
     parser.add_argument("--workers", type=int, default=1, help="Concurrent passive replay batches; reduce if CPU oversubscribes.")
-    parser.add_argument("--output-root", default="results", help="Parent directory for a new timestamped result.")
+    parser.add_argument(
+        "--output-root",
+        default="experiments/07_two_pass_reconstruction/results",
+        help="Parent directory for a new timestamped result.",
+    )
     parser.add_argument("--config", type=Path, default=ACTIVE_CONFIG_PATH, help="Search-produced JSON parameter config.")
     parser.add_argument("--ignore-config", action="store_true", help="Use built-in or explicit CLI values only.")
     parser.add_argument("--quick", action="store_true", help="Tiny path check, not a scientific experiment.")
