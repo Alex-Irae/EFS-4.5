@@ -6,6 +6,8 @@ This document records every major shared-lambda H4.5 experiment preserved in thi
 
 The authoritative scientific hypothesis remains [`EFS_AnewOmni_Hypothesis_4_5_Project.md`](../EFS_AnewOmni_Hypothesis_4_5_Project.md). The discussion history remains [`4.5_logs.md`](4.5_logs.md). This ledger is the evidence summary.
 
+`Shared barycentric coefficients provide synchronized initialization but no persistent coupling. In the tested pooled passive EFS systems, they neither supplied enough degrees of freedom to represent arbitrary complete sources nor caused backward replay to restore source identity lost at the terminal plane. The method therefore remains unsupported as a mechanism for coherent multi-component generation.`
+
 ## Original claim
 
 For $K$ complete source objects, choose one coefficient vector:
@@ -30,31 +32,31 @@ The formal H4.5 claim also assumes that the source objects are complete, locally
 
 ## Meaning of the result labels
 
-| Label | Meaning |
-| --- | --- |
-| Numerically invalid | The forward or backward EFS calculation was not trustworthy. |
-| Rejected model | The code may have worked, but its particle model did not match the one-plane interpretation adopted later. |
-| Biased evidence | The target was created using the same rule being evaluated, so success could not establish real generation ability. |
-| Negative mechanism evidence | A controlled test contradicted a necessary behavior of the proposed mechanism. |
-| Mixed | Some cases improved and others worsened, with no reliable advantage. |
-| Calibration success | The test established that the EFS field or inverse worked, but did not test source validity. |
+| Label                       | Meaning                                                                                                             |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Numerically invalid         | The forward or backward EFS calculation was not trustworthy.                                                        |
+| Rejected model              | The code may have worked, but its particle model did not match the one-plane interpretation adopted later.          |
+| Biased evidence             | The target was created using the same rule being evaluated, so success could not establish real generation ability. |
+| Negative mechanism evidence | A controlled test contradicted a necessary behavior of the proposed mechanism.                                      |
+| Mixed                       | Some cases improved and others worsened, with no reliable advantage.                                                |
+| Calibration success         | The test established that the EFS field or inverse worked, but did not test source validity.                        |
 
 ## Condensed result table
 
-| Test | Main result | Status for H4.5 | Main reason |
-| --- | --- | --- | --- |
-| Structured families and rotations | Shared lambda could preserve deliberately constructed family correlations | Biased and over-structured | The data already contained the type of joint structure the method was supposed to discover |
-| Separate field per slot | Shared was cleaner than independent after replay was repaired | Rejected model for the current one-plane study | Eight independent fields imposed slot identity and prevented ordinary cross-particle interactions |
-| First pooled single-plane witness | Shared beat the independent control on coherence, but both outputs failed validity | Inconclusive | One witness, no known target, and no decoded validity |
-| Controlled barycentric targets | Shared won 47 of 48 slot trials and 48 of 48 single-plane trials | Algebraically positive but scientifically biased | The targets were generated with the exact shared-lambda rule |
-| Forward and vertex calibration | Near-uniform terminal field and very accurate vertex replay were achieved | Calibration success | Exact vertex inversion does not test off-vertex generation |
-| Lambda fitted at the initial plane | Initial interpolation did not commute reliably with nonlinear EFS transport | Rejected protocol | Coefficients describing the original plane need not describe the terminal plane |
-| Neighbors selected at the terminal plane | Terminal fitting became internally consistent | Rejected protocol | EFS was allowed to redefine which sources were semantically similar |
-| Held-out random complete sources | EFS beat direct interpolation in 3 of 16 trials | Negative for this synthetic source model | Four weights could not fit an arbitrary 40-dimensional random source, and EFS worsened the median result |
-| One-particle 2D toy | EFS beat direct interpolation in 33 of 64 trials | Mixed local result | It removed the multi-particle coherence problem that H4.5 is meant to solve |
-| Strong-contraction 2D toy | EFS beat direct interpolation in 2 of 16 trials | Negative | More contraction produced a shell-like endpoint and did not repair the terminal seed |
-| Two-pass target removal | Arrival was slightly worse than direct interpolation; pass-1 and pass-2 fields were almost identical | Negative for the tested reconstruction | The shared terminal fit was already poor before replay; removing one source was not the main cause |
-| Homogeneous created-target replay | Close terminal seeds stayed close in 2D even with accurate inversion | Negative mechanism evidence | Passive backward replay did not restore identity after terminal compression |
+| Test                                     | Main result                                                                                          | Status for H4.5                                  | Main reason                                                                                              |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| Structured families and rotations        | Shared lambda could preserve deliberately constructed family correlations                            | Biased and over-structured                       | The data already contained the type of joint structure the method was supposed to discover               |
+| Separate field per slot                  | Shared was cleaner than independent after replay was repaired                                        | Rejected model for the current one-plane study   | Eight independent fields imposed slot identity and prevented ordinary cross-particle interactions        |
+| First pooled single-plane witness        | Shared beat the independent control on coherence, but both outputs failed validity                   | Inconclusive                                     | One witness, no known target, and no decoded validity                                                    |
+| Controlled barycentric targets           | Shared won 47 of 48 slot trials and 48 of 48 single-plane trials                                     | Algebraically positive but scientifically biased | The targets were generated with the exact shared-lambda rule                                             |
+| Forward and vertex calibration           | Near-uniform terminal field and very accurate vertex replay were achieved                            | Calibration success                              | Exact vertex inversion does not test off-vertex generation                                               |
+| Lambda fitted at the initial plane       | Initial interpolation did not commute reliably with nonlinear EFS transport                          | Rejected protocol                                | Coefficients describing the original plane need not describe the terminal plane                          |
+| Neighbors selected at the terminal plane | Terminal fitting became internally consistent                                                        | Rejected protocol                                | EFS was allowed to redefine which sources were semantically similar                                      |
+| Held-out random complete sources         | EFS beat direct interpolation in 3 of 16 trials                                                      | Negative for this synthetic source model         | Four weights could not fit an arbitrary 40-dimensional random source, and EFS worsened the median result |
+| One-particle 2D toy                      | EFS beat direct interpolation in 33 of 64 trials                                                     | Mixed local result                               | It removed the multi-particle coherence problem that H4.5 is meant to solve                              |
+| Strong-contraction 2D toy                | EFS beat direct interpolation in 2 of 16 trials                                                      | Negative                                         | More contraction produced a shell-like endpoint and did not repair the terminal seed                     |
+| Two-pass target removal                  | Arrival was slightly worse than direct interpolation; pass-1 and pass-2 fields were almost identical | Negative for the tested reconstruction           | The shared terminal fit was already poor before replay; removing one source was not the main cause       |
+| Homogeneous created-target replay        | Close terminal seeds stayed close in 2D even with accurate inversion                                 | Negative mechanism evidence                      | Passive backward replay did not restore identity after terminal compression                              |
 
 ## 1. Structured synthetic families and rotations
 

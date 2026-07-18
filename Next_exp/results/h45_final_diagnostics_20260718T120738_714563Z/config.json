@@ -1,0 +1,140 @@
+{
+  "algebra_self_check": {
+    "local": {
+      "effective_parent_count": 2.6315789473684212
+    },
+    "parent_data": {
+      "lambda_max_abs_error": 0.0,
+      "matching_rmse": 0.0
+    },
+    "parent_efs": {
+      "center_force_norm": 9.321907481344796e-16,
+      "field_max_abs_error": 2.220446049250313e-16,
+      "gradient_directional_error": 2.0229817820904827e-10,
+      "sparse_history_max_abs_error": 0.0
+    }
+  },
+  "boundary_neighbors": 32,
+  "created_utc": "2026-07-18T12:07:38.714563+00:00",
+  "data_scale": 1.0,
+  "decision": "stop: increasing K did not produce a sufficiently accurate terminal representation",
+  "delta_factors": [
+    0.0001,
+    0.0003,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "dimension": 4,
+  "efs": {
+    "beta": 0.1,
+    "epsilon": 0.01,
+    "exponent_s": 3.0,
+    "forward_steps": 2000,
+    "gamma": 0.001,
+    "parameter_source": "E:\\Desktop\\AnewOmni\\4.5hypothesis\\best_config.json",
+    "proximal_steps": 50
+  },
+  "experiments": [
+    "parent-sweep",
+    "du-sensitivity",
+    "lambda-path"
+  ],
+  "k_values": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "lambda_fit_frame": "du",
+  "lambda_iterations": 2000,
+  "model": "one pooled target-free memory field; passive targets and candidates",
+  "neighbor_frame": "d1",
+  "particles_per_source": 8,
+  "path_pairs_per_category": 1,
+  "path_pool": 32,
+  "path_step": 0.01,
+  "quick": false,
+  "seed_runs": {
+    "4652": {
+      "forward_seconds": 296.079169500008,
+      "smoke": {
+        "initial": {
+          "angular_moment_error": 0.24007935762347415,
+          "angular_resultant": 0.04723066134738553,
+          "covariance_ratio": 0.30153445092374775,
+          "expected_radius_cv": 0.20412414523193154,
+          "finite": true,
+          "fitted_ball_radius": 2.2982205689543496,
+          "mean_pair_distance": 2.4256434991022977,
+          "mean_radius": 1.7395440523985055,
+          "radial_cdf_gap": 0.2649640545937999,
+          "radial_overflow": 0.14990234375,
+          "radial_zone_0": 0.27734375,
+          "radial_zone_1": 0.16845703125,
+          "radial_zone_2": 0.11279296875,
+          "radial_zone_3": 0.0771484375,
+          "radial_zone_4": 0.06396484375,
+          "radial_zone_5": 0.0478515625,
+          "radial_zone_6": 0.04345703125,
+          "radial_zone_7": 0.02294921875,
+          "radial_zone_8": 0.02490234375,
+          "radial_zone_9": 0.01123046875,
+          "radius_cv": 0.4045331918308025,
+          "radius_q05": 0.4115954932027198,
+          "radius_q25": 0.5479527014437577,
+          "radius_q50": 0.7024065352569999,
+          "radius_q75": 0.8822340144983681,
+          "radius_q95": 1.3318038856673982,
+          "radius_ratio": 1.0,
+          "rms_radius": 1.8764892367689998
+        },
+        "terminal": {
+          "angular_moment_error": 0.018497714054975682,
+          "angular_resultant": 0.0004124484153649882,
+          "covariance_ratio": 0.8543771859734062,
+          "expected_radius_cv": 0.20412414523193154,
+          "finite": true,
+          "fitted_ball_radius": 1.0691919511206818,
+          "mean_pair_distance": 1.1798397816566157,
+          "mean_radius": 0.8534125245550821,
+          "radial_cdf_gap": 0.040292193632600726,
+          "radial_overflow": 0.02783203125,
+          "radial_zone_0": 0.1123046875,
+          "radial_zone_1": 0.103515625,
+          "radial_zone_2": 0.10302734375,
+          "radial_zone_3": 0.08642578125,
+          "radial_zone_4": 0.0830078125,
+          "radial_zone_5": 0.0830078125,
+          "radial_zone_6": 0.1005859375,
+          "radial_zone_7": 0.115234375,
+          "radial_zone_8": 0.1201171875,
+          "radial_zone_9": 0.06494140625,
+          "radius_cv": 0.21543090264138964,
+          "radius_q05": 0.45763579041252267,
+          "radius_q25": 0.6903138714100756,
+          "radius_q50": 0.8445493715539278,
+          "radius_q75": 0.9373115766992431,
+          "radius_q95": 0.991023683767241,
+          "radius_ratio": 0.46522599508677503,
+          "rms_radius": 0.872991572445481
+        }
+      },
+      "smoke_failure_reasons": [],
+      "smoke_passed": true
+    }
+  },
+  "seeds": [
+    4652
+  ],
+  "sensitivity_vertices": 12,
+  "source_count": 256,
+  "status": "complete",
+  "target_count": 8,
+  "total_seconds": 7091.779910900004,
+  "workers": 8
+}

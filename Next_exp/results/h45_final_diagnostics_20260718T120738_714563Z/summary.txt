@@ -1,0 +1,16 @@
+H4.5 final diagnostics
+
+decision: stop: increasing K did not produce a sufficiently accurate terminal representation
+
+decision inputs:
+  smallest_k: 4
+  largest_k: 128
+  terminal_improvement_fraction: 0.37250753175627205
+  replay_improvement_fraction: -0.15486883739219937
+  largest_k_terminal_rmse: 0.44068862232400874
+  largest_k_median_replay_over_direct: 1.1512740477107015
+  small_delta_p95_local_amplification: 0.0
+  small_delta_identity_change_fraction: 0.0
+  path_p95_step_amplification: 55.591327823940986
+
+This classification uses declared practical flags, not formal statistical tests.
