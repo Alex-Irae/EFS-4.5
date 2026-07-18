@@ -208,7 +208,18 @@ Large `.npy`, generated `.npz`, and `__pycache__` files are ignored. They are ex
 
 No result directory is overwritten by the runners.
 
+### Conclusion on EFS x AnewOMNI via H4.5
+
+Exact vanilla EFS is computationally incompatible with the full ANewOmni corpus, while complete-peptide joint EFS introduces an impractical dimensional regime. 
+
+H4.5 tested whether shared complete-source initialization could preserve source-level coherence while retaining tractable 11-dimensional slot-wise EFS. 
+
+Across controlled synthetic diagnostics, shared initialization did not supply persistent coupling, did not reliably reconstruct held-out complete sources, and did not outperform direct interpolation consistently. 
+
+H4.5 is therefore not supported as a practical mechanism for integrating vanilla EFS with ANewOmni. Future work would require either a scalable approximate interaction model, an explicitly coupled structured EFS formulation, or a substantially different representation.
+
 ### Main Sources
 
 "DATA GENERATION WITHOUT FUNCTION ESTIMATION, Hadi Daneshmand1 and Ashkan Soleymani2, arXiv:2507.08239v1 [cs.LG] 11 Jul 2025"
+
 "Programming Biomolecular Interactions with All-Atom Generative Model, KONG & al., doi: https://doi.org/10.64898/2026.03.12.711044"
