@@ -132,7 +132,7 @@ def forward_history(
     logged_steps: list[int] = []
     logged_distances: list[float] = []
 
-    # ponytail: exact EFS is O(N^2) per frame. The scalar pair matrices are the
+    #  exact EFS is O(N^2) per frame. The scalar pair matrices are the
     # simplest exact implementation; approximate neighbors belong in a later study.
     for frame in range(steps):
         if log_every and frame % log_every == 0:

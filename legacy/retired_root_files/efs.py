@@ -219,7 +219,7 @@ def forward_history(
     actual_steps = 0
     current = initial_particles.copy()
 
-    # ponytail: exact all-pair EFS is O(H*N^2) per frame. Approximate
+    # exact all-pair EFS is O(H*N^2) per frame. Approximate
     # neighborhoods belong in a later study only if this reference is unusable.
     for step in range(1, steps + 1):
         try:
@@ -289,6 +289,7 @@ def forward_history(
     }
     return history, diagnostics
 
+
 def replay_field(candidates: np.ndarray, particles: np.ndarray, gamma: float, epsilon: float, exponent_s: float) -> np.ndarray:
     """Evaluate the vanilla EFS replay field for queries shaped ``[Q,D]``.
 
@@ -329,11 +330,7 @@ def replay_field(candidates: np.ndarray, particles: np.ndarray, gamma: float, ep
 
 
 def layout_replay_field(
-    candidates: np.ndarray,
-    particles: np.ndarray,
-    gamma: float,
-    epsilon: float,
-    exponent_s: float,
+    candidates: np.ndarray, particles: np.ndarray, gamma: float, epsilon: float, exponent_s: float
 ) -> np.ndarray:
     """Evaluate passive candidates ``[G,P,D]`` in either memory layout.
 
@@ -371,9 +368,7 @@ def layout_replay_field(
     squared_distance = query_norm + particle_norm - 2.0 * pair_dot  # shape: [P,G,C]
     np.maximum(squared_distance, 0.0, out=squared_distance)
 
-    weights = np.power(
-        squared_distance + epsilon, -(exponent_s / 2.0 + 1.0)
-    )  # shape: [P,G,C]
+    weights = np.power(squared_distance + epsilon, -(exponent_s / 2.0 + 1.0))  # shape: [P,G,C]
     particle_sum = np.sum(particles, axis=1)[:, None, :]  # shape: [P,1,D]
     attractive_sum = source_count * query - particle_sum  # shape: [P,G,D]
     weighted_particle_sum = weights @ particles  # [P,G,C] @ [P,C,D] -> [P,G,D]
@@ -386,11 +381,7 @@ def layout_replay_field(
 
 
 def passive_forward(
-    initial_queries: np.ndarray,
-    history: np.ndarray,
-    gamma: float,
-    epsilon: float,
-    exponent_s: float,
+    initial_queries: np.ndarray, history: np.ndarray, gamma: float, epsilon: float, exponent_s: float
 ) -> np.ndarray:
     """Transport passive queries through a contiguous cached history.
 
@@ -416,14 +407,13 @@ def passive_forward(
 
     current = values.copy()  # shape: [Q,P,D]
     for source_frame in range(history.shape[0] - 1):
-        force = layout_replay_field(
-            current, history[source_frame], gamma, epsilon, exponent_s
-        )  # shape: [Q,P,D]
+        force = layout_replay_field(current, history[source_frame], gamma, epsilon, exponent_s)  # shape: [Q,P,D]
         current = current - force
 
     if not np.all(np.isfinite(current)):
         raise FloatingPointError("passive target transport became non-finite")
     return current[:, 0] if was_rows else current
+
 
 def ensemble_mean_distance(ensembles: np.ndarray) -> np.ndarray:
     """Return within-ensemble mean distances for arrays shaped ``[G,P,D]``."""
@@ -572,9 +562,7 @@ def self_check() -> dict[str, float]:
         for query in range(values.shape[0]):
             for other in range(values.shape[0]):
                 if query != other:
-                    explicit[query] += potential_gradient(
-                        values[query] - values[other], epsilon=0.1, exponent_s=2.0
-                    )
+                    explicit[query] += potential_gradient(values[query] - values[other], epsilon=0.1, exponent_s=2.0)
             explicit[query] /= float(values.shape[0] - 1)
         return explicit
 
@@ -584,10 +572,9 @@ def self_check() -> dict[str, float]:
     slot_explicit = np.stack([literal(slot_particles[slot]) for slot in range(8)])  # eight [C,D] fields -> [P,C,D]
     queries = rng.normal(size=(3, 8, 4))  # shape: [G=3,P=8,D=4]
     slot_query = layout_replay_field(queries, slot_particles, 0.01, 0.1, 2.0)
-    slot_query_explicit = np.stack([
-        replay_field(queries[:, slot], slot_particles[slot], 0.01, 0.1, 2.0)
-        for slot in range(8)
-    ], axis=1)  # eight [G,D] fields -> [G,P,D]
+    slot_query_explicit = np.stack(
+        [replay_field(queries[:, slot], slot_particles[slot], 0.01, 0.1, 2.0) for slot in range(8)], axis=1
+    )  # eight [G,D] fields -> [G,P,D]
 
     pooled_error = float(np.max(np.abs(pooled_vectorized - pooled_explicit)))
     slot_error = float(np.max(np.abs(slot_vectorized - slot_explicit)))
@@ -606,6 +593,7 @@ def self_check() -> dict[str, float]:
         "pooled_center_drift": pooled_center_drift,
         "slot_center_drift": slot_center_drift,
     }
+
 
 if __name__ == "__main__":
     print(self_check())

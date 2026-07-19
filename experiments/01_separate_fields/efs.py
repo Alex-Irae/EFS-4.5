@@ -135,7 +135,7 @@ def forward_history(initial_particles: np.ndarray, gamma: float, epsilon: float,
     history = np.empty((steps + 1, slot_count, particle_count, dimension), dtype=np.float64)  # shape: [K+1,L,N,D]
     history[0] = initial_particles
 
-    # ponytail: full [L,N,N] batching is simplest and fast for local memories;
+    # full [L,N,N] batching is simplest and fast for local memories;
     # chunk the particle axes only if N grows enough to pressure available RAM.
     for frame in range(steps):
         field = forward_field(history[frame], epsilon, exponent_s)  # shape: [L,N,D]

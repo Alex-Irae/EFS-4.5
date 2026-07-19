@@ -6,29 +6,27 @@ The experiments are organized chronologically under `experiments/`. Reusable one
 
 ## Current Conclusion on EFS x AnewOMNI via H4.5
 
-Exact vanilla EFS is computationally incompatible with the full ANewOmni corpus, while complete-peptide joint EFS introduces an impractical dimensional regime.
+An ANewOmni block latent contains eight feature coordinates and three spatial coordinates. The degree of dependence between different block latents could not be measured on the available hardware, and no ANewOmni latent dataset or decoder-level validity experiment was available. The main synthetic experiments therefore use a deliberately structure-agnostic chaotic particle baseline rather than imposing source-level correlations that might favor the hypothesis.
 
-H4.5 tested whether shared complete-source initialization could preserve source-level coherence while retaining tractable 11-dimensional slot-wise EFS.
+Under this baseline, the EFS field itself remained numerically usable and exact memory vertices generally replayed accurately. The shared-lambda generation mechanism failed at the harder off-vertex problem:
 
-Across controlled synthetic diagnostics, shared initialization did not supply persistent coupling, did not reliably reconstruct held-out complete sources, and did not outperform direct interpolation consistently.
+- shared convex terminal seeds remained inaccurate even with up to 128 parents;
 
-H4.5 is therefore not supported as a practical mechanism for integrating vanilla EFS with ANewOmni. Future work would require either a scalable approximate interaction model, an explicitly coupled structured EFS formulation, or a substantially different representation.
+- backward replay did not preserve the improvement obtained from additional parents;
 
----
+- replay did not consistently outperform direct interpolation using the same parents and lambda;
 
-The passive shared-lambda route is **not validated and is stopped in its current form**.
+- terminal identity compression was not reversed by passive replay;
 
-The EFS field itself was numerically usable: accepted runs stayed finite and exact memory vertices usually replayed accurately. The generation mechanism failed at the harder off-vertex step:
+- smooth lambda paths crossed replay regions through strongly amplified output steps.
 
-- shared convex seeds fitted arbitrary complete sources poorly, even with $K=128$ parents;
-- replay did not preserve the improvement obtained from additional parents;
-- close terminal seeds were not reliably separated into their original identities;
-- smooth source-level lambda paths produced p95 step amplification of 55.59 in the final run;
-- no experiment could measure decoded molecular validity on the available hardware.
+The passive shared-lambda formulation is therefore stopped in its current form. The experiments show that shared initialization alone cannot be relied upon to create persistent source-level coupling when such coupling is absent or unknown.
+
+This is not a mathematical disproof on real ANewOmni latents. Strong correlations in the real representation, decoder-mediated correction, or an explicitly coupled EFS formulation could produce different behavior. The present result is a practical negative screening result under the available computational and experimental constraints.
 
 See [`docs/experiment_ledger.md`](docs/experiment_ledger.md) for the evidence and failure justification of every tested variant.
 
-## One-line pipeline
+## One-line pipeline experiments
 
 `synthetic complete sources -> one pooled EFS field -> terminal shared-lambda seed -> passive backward replay -> direct and vertex controls -> source-level error and continuity diagnostics`
 
@@ -89,7 +87,6 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
   run.py
   search.py
   docs/
-    h45_project.md
     broad_hypotheses.md
     adjacent_hypotheses.md
     experiment_ledger.md

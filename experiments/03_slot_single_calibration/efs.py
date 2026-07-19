@@ -219,7 +219,7 @@ def forward_history(
     actual_steps = 0
     current = initial_particles.copy()
 
-    # ponytail: exact all-pair EFS is O(H*N^2) per frame. Approximate
+    # exact all-pair EFS is O(H*N^2) per frame. Approximate
     # neighborhoods belong in a later study only if this reference is unusable.
     for step in range(1, steps + 1):
         try:

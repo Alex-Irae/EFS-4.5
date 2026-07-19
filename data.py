@@ -142,7 +142,7 @@ def best_permutation(reference: np.ndarray, candidate: np.ndarray, scale: np.nda
     The cost is squared distance after dividing every coordinate by ``scale``.
     A small bit-mask dynamic program is exact for the intended small ``P``.
 
-    # ponytail: O(P*2^P) exact matching; use scipy's assignment solver if P > 16.
+    # O(P*2^P) exact matching; use scipy's assignment solver if P > 16.
     """
     reference = np.asarray(reference, dtype=np.float64)
     candidate = np.asarray(candidate, dtype=np.float64)
