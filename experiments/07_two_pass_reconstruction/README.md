@@ -490,11 +490,7 @@ Output: their reconstructed initial positions.
 For particle $p$:
 
 $$
-e_{v,p}
-=
-\frac{
-\sqrt{D^{-1}\sum_d(\hat{x}_{p,d}^{(0)}-x_{p,d}^{(0)})^2}
-}{\sigma_{\mathrm{memory}}}.
+e_{v,p}=\frac{\sqrt{D^{-1}\sum_d(\hat{x}_{p,d}^{(0)}-x_{p,d}^{(0)})^2}}{\sigma_{\mathrm{memory}}}.
 $$
 
 | Relative error    | Interpretation            |
@@ -664,6 +660,7 @@ Every run creates a new timestamped directory and refuses collisions.
 - `samples.npz`: both histories, source IDs, saved matching, lambda, KL histograms, candidates, replay, and metrics.
 
 Only the small `pass1_reference.npz` provenance example is retained in Git. Other generated NPZ files remain local and are covered by the repository-level ignore policy.
+
 - `summary.txt`: target ID, parents, lambda, KL, terminal error, arrival error, amplification, and runtimes.
 - `two_pass_target.png`
 - `two_pass_field_shift.png`
