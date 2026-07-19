@@ -49,26 +49,19 @@ See [`docs/experiment_ledger.md`](docs/experiment_ledger.md) for the evidence an
 The canonical potential gradient is:
 
 $$
-\nabla W(z)
-=
-z-
-\frac{z}{(\lVert z\rVert^2+\epsilon)^{s/2+1}}.
+\nabla W(z)=z-\frac{z}{(\lVert z\rVert^2+\epsilon)^{s/2+1}}
 $$
 
 One shared barycentric vector satisfies:
 
 $$
-\lambda_k\geq0,
-\qquad
-\sum_{k=1}^{K}\lambda_k=1.
+\lambda_k\geq0,\qquad \sum_{k=1}^{K}\lambda_k=1
 $$
 
 For corresponding particle $p$ from complete parent sources $S_k$, the terminal seed is:
 
 $$
-Y_p^{(T)}
-=
-\sum_{k=1}^{K}\lambda_k S_{k,p}^{(T)}.
+Y_p^{(T)}=\sum_{k=1}^{K}\lambda_k S_{k,p}^{(T)}
 $$
 
 The same lambda is used for every $p$. It correlates initialization only. Generated particles remain passive during replay and do not exert forces on one another.
