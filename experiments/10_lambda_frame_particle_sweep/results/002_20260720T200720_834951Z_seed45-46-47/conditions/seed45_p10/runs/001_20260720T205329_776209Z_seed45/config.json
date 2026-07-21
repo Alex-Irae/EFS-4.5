@@ -1,0 +1,634 @@
+{
+  "algebra_self_check": {
+    "data": {
+      "lambda_max_abs_error": 0.0,
+      "matching_rmse": 0.0,
+      "p1_shared_control_max_abs_error": 0.0
+    },
+    "efs": {
+      "center_force_norm": 9.321907481344796e-16,
+      "field_max_abs_error": 2.220446049250313e-16,
+      "gradient_directional_error": 2.0229817820904827e-10,
+      "sparse_history_max_abs_error": 0.0
+    },
+    "evaluation": {
+      "identical_plane_kl": 0.0
+    }
+  },
+  "arrival_error": [
+    0.4763998259481014,
+    0.4512294200933812,
+    0.3795590791547101,
+    0.3928251271182914
+  ],
+  "beta": 0.1,
+  "created_utc": "2026-07-20T21:36:48.936580+00:00",
+  "cross_frame_rmse": [
+    0.6328341582641602,
+    0.4268081151533183,
+    0.5354684961791395,
+    0.3548258382976549
+  ],
+  "data_model": "independent_chaotic_particles_v1",
+  "data_scale": 1.0,
+  "dimension": 4,
+  "epsilon": 0.01,
+  "exponent_s": 3.0,
+  "forward_steps_requested": 2000,
+  "gamma": 0.001,
+  "generation_forward_seconds": 2518.070056999997,
+  "generation_frame": "pass-2 terminal plane du with target absent",
+  "generation_smoke": {
+    "initial": {
+      "angular_moment_error": 0.26389635168604025,
+      "angular_resultant": 0.0848047036421167,
+      "covariance_ratio": 0.20487831119675956,
+      "expected_radius_cv": 0.20412414523193154,
+      "finite": true,
+      "fitted_ball_radius": 2.301187632899631,
+      "mean_pair_distance": 2.4368007502418476,
+      "mean_radius": 1.7614688860509737,
+      "radial_cdf_gap": 0.2707656106339083,
+      "radial_overflow": 0.161328125,
+      "radial_zone_0": 0.2208984375,
+      "radial_zone_1": 0.2361328125,
+      "radial_zone_2": 0.1126953125,
+      "radial_zone_3": 0.06953125,
+      "radial_zone_4": 0.04375,
+      "radial_zone_5": 0.05078125,
+      "radial_zone_6": 0.0400390625,
+      "radial_zone_7": 0.0283203125,
+      "radial_zone_8": 0.01875,
+      "radial_zone_9": 0.0177734375,
+      "radius_cv": 0.3712033603721614,
+      "radius_q05": 0.44287191951409993,
+      "radius_q25": 0.5733829974871867,
+      "radius_q50": 0.6965041433772805,
+      "radius_q75": 0.8926234646140001,
+      "radius_q95": 1.324327243849844,
+      "radius_ratio": 1.0,
+      "rms_radius": 1.8789118343357158
+    },
+    "terminal": {
+      "angular_moment_error": 0.023957546544327635,
+      "angular_resultant": 0.0002730063560456619,
+      "covariance_ratio": 0.8198866764273263,
+      "expected_radius_cv": 0.20412414523193154,
+      "finite": true,
+      "fitted_ball_radius": 1.076069545194289,
+      "mean_pair_distance": 1.1868196261498856,
+      "mean_radius": 0.8583944345433503,
+      "radial_cdf_gap": 0.04737943258851662,
+      "radial_overflow": 0.0474609375,
+      "radial_zone_0": 0.1142578125,
+      "radial_zone_1": 0.10546875,
+      "radial_zone_2": 0.1001953125,
+      "radial_zone_3": 0.099609375,
+      "radial_zone_4": 0.084375,
+      "radial_zone_5": 0.07734375,
+      "radial_zone_6": 0.0826171875,
+      "radial_zone_7": 0.103515625,
+      "radial_zone_8": 0.11328125,
+      "radial_zone_9": 0.071875,
+      "radius_cv": 0.21828558181835483,
+      "radius_q05": 0.45362850081379064,
+      "radius_q25": 0.6917212259710771,
+      "radius_q50": 0.8388142279609632,
+      "radius_q75": 0.9413983839827866,
+      "radius_q95": 0.9983798161568253,
+      "radius_ratio": 0.46761486538947655,
+      "rms_radius": 0.8786071044915902
+    }
+  },
+  "generation_smoke_failure_reasons": [],
+  "generation_smoke_passed": true,
+  "generation_source_count": 512,
+  "generation_terminal_rmse": [
+    0.6325525635000323,
+    0.5993437297066646,
+    0.5353225870592292,
+    0.42516060741414863
+  ],
+  "initial_candidate_rmse": [
+    0.40099519577888254,
+    0.4268081151533183,
+    0.2771314617294873,
+    0.3548258382976549
+  ],
+  "lambda_fit_rmse": [
+    0.40099519577888254,
+    0.5995821334437488,
+    0.2771314617294873,
+    0.4257546167784372
+  ],
+  "lambda_iterations": 1000,
+  "lambda_methods": [
+    "shared_d1",
+    "shared_du",
+    "per_particle_d1",
+    "per_particle_du"
+  ],
+  "lambda_sum_max_abs_error": 0.0,
+  "loaded_parameter_config": {
+    "beta": 0.1,
+    "created_utc": "2026-07-17T20:07:10.212439+00:00",
+    "data_model": "independent_chaotic_particles_v1",
+    "epsilon": 0.01,
+    "exponent_s": 3.0,
+    "forward_id": "eps0.01_s3_g0.001_tau2",
+    "forward_steps": 2000,
+    "gamma": 0.001,
+    "geometry_quality": "close to uniform",
+    "max_replay_residual": 3.1581149886366156e-06,
+    "minimum_covariance_ratio": 0.8208855241388922,
+    "particles_per_source": 10,
+    "proximal_steps": 50,
+    "quick": false,
+    "radius_ratio_max": 0.4529687649363836,
+    "radius_ratio_min": 0.4401637521754117,
+    "schema_version": 1,
+    "search_directory": "E:\\Desktop\\AnewOmni\\4.5hypothesis\\results\\one_plane_search_20260717T183527_965392Z",
+    "selected_by": "single-plane search.py",
+    "selection_rule": "forward uniformity first; replay must pass maximum relative RMSE <= 0.10",
+    "transport_time": 2.0,
+    "uniformity_score": 0.061967944471633674,
+    "vertex_particle_max_relative_rmse": 0.0016510179781244602,
+    "vertex_particle_p95_relative_rmse": 0.0015410516052210732,
+    "worst_angular_moment_error": 0.02340884877698828,
+    "worst_angular_resultant": 0.00044784310403551833,
+    "worst_radial_cdf_gap": 0.03811125259060988,
+    "worst_radial_zone_rmse": 0.019449830293282767
+  },
+  "loaded_parameter_config_path": "E:\\Desktop\\AnewOmni\\4.5hypothesis\\experiments\\10_lambda_frame_particle_sweep\\best_config.json",
+  "log_every": 25,
+  "mean_pass1_to_pass2_kl": 0.00021962493179137173,
+  "mean_pass2_to_pass1_kl": 0.00021931939885881836,
+  "mean_retained_terminal_displacement": 0.002725265756785172,
+  "method_fit_summary": {
+    "per_particle_d1": {
+      "arrival_rmse": 0.3795590791547101,
+      "cross_frame_rmse": 0.5354684961791395,
+      "fit_frame": "d1",
+      "generation_terminal_rmse": 0.5353225870592292,
+      "initial_candidate_rmse": 0.2771314617294873,
+      "lambda_fit_rmse": 0.2771314617294873,
+      "reference_terminal_rmse": 0.5354684961791395,
+      "terminal_to_arrival_amplification": 0.7090287021883404
+    },
+    "per_particle_du": {
+      "arrival_rmse": 0.3928251271182914,
+      "cross_frame_rmse": 0.3548258382976549,
+      "fit_frame": "du",
+      "generation_terminal_rmse": 0.42516060741414863,
+      "initial_candidate_rmse": 0.3548258382976549,
+      "lambda_fit_rmse": 0.4257546167784372,
+      "reference_terminal_rmse": 0.4257546167784372,
+      "terminal_to_arrival_amplification": 0.9239452580225541
+    },
+    "shared_d1": {
+      "arrival_rmse": 0.4763998259481014,
+      "cross_frame_rmse": 0.6328341582641602,
+      "fit_frame": "d1",
+      "generation_terminal_rmse": 0.6325525635000323,
+      "initial_candidate_rmse": 0.40099519577888254,
+      "lambda_fit_rmse": 0.40099519577888254,
+      "reference_terminal_rmse": 0.6328341582641602,
+      "terminal_to_arrival_amplification": 0.7531387167448844
+    },
+    "shared_du": {
+      "arrival_rmse": 0.4512294200933812,
+      "cross_frame_rmse": 0.4268081151533183,
+      "fit_frame": "du",
+      "generation_terminal_rmse": 0.5993437297066646,
+      "initial_candidate_rmse": 0.4268081151533183,
+      "lambda_fit_rmse": 0.5995821334437488,
+      "reference_terminal_rmse": 0.5995821334437488,
+      "terminal_to_arrival_amplification": 0.7528725132641754
+    }
+  },
+  "method_summary": {
+    "per_particle_d1": {
+      "beats_direct_count": 0,
+      "beats_parent_count": 1,
+      "maximum_efs_direct_ratio": 1.3702232470344518,
+      "median_direct_relative_distance": 0.3381562334970583,
+      "median_direct_set_rmse": 0.2771314617294873,
+      "median_efs_direct_ratio": 1.3702232470344518,
+      "median_generated_relative_distance": 0.4633495322672795,
+      "median_generated_set_rmse": 0.3795590791547101,
+      "median_relation_rmse": 0.44353067715777067,
+      "p90_efs_direct_ratio": 1.3702232470344518,
+      "status": "no consistent target improvement",
+      "targets": 1
+    },
+    "per_particle_du": {
+      "beats_direct_count": 0,
+      "beats_parent_count": 1,
+      "maximum_efs_direct_ratio": 1.1094981520402623,
+      "median_direct_relative_distance": 0.4307423629309729,
+      "median_direct_set_rmse": 0.3548258382976549,
+      "median_efs_direct_ratio": 1.1094981520402623,
+      "median_generated_relative_distance": 0.4779078556773704,
+      "median_generated_set_rmse": 0.3928251271182914,
+      "median_relation_rmse": 0.3086942124482092,
+      "p90_efs_direct_ratio": 1.1094981520402623,
+      "status": "no consistent target improvement",
+      "targets": 1
+    },
+    "shared_d1": {
+      "beats_direct_count": 0,
+      "beats_parent_count": 1,
+      "maximum_efs_direct_ratio": 1.1866890733495896,
+      "median_direct_relative_distance": 0.49091119661084215,
+      "median_direct_set_rmse": 0.40099519577888254,
+      "median_efs_direct_ratio": 1.1866890733495896,
+      "median_generated_relative_distance": 0.5825589530030585,
+      "median_generated_set_rmse": 0.4763998259481014,
+      "median_relation_rmse": 0.4115718107242123,
+      "p90_efs_direct_ratio": 1.1866890733495896,
+      "status": "no consistent target improvement",
+      "targets": 1
+    },
+    "shared_du": {
+      "beats_direct_count": 0,
+      "beats_parent_count": 1,
+      "maximum_efs_direct_ratio": 1.0545809269061504,
+      "median_direct_relative_distance": 0.5207442204433369,
+      "median_direct_set_rmse": 0.4268081151533183,
+      "median_efs_direct_ratio": 1.0545809269061504,
+      "median_generated_relative_distance": 0.549166922676155,
+      "median_generated_set_rmse": 0.4512294200933812,
+      "median_relation_rmse": 0.24055153028288395,
+      "p90_efs_direct_ratio": 1.0545809269061504,
+      "status": "no consistent target improvement",
+      "targets": 1
+    }
+  },
+  "neighbor_frame": "initial data plane d1",
+  "p1_shared_control_max_abs_error": 0.0,
+  "p95_retained_terminal_displacement": 0.008906405548485588,
+  "parameter_source": "saved config E:\\Desktop\\AnewOmni\\4.5hypothesis\\experiments\\10_lambda_frame_particle_sweep\\best_config.json",
+  "parent_count": 4,
+  "parent_initial_distances": [
+    0.5568837279080934,
+    0.5832054418800892,
+    0.587189610684278,
+    0.5895900484827089
+  ],
+  "parent_source_ids": [
+    228,
+    381,
+    241,
+    258
+  ],
+  "particle_distribution": "chaotic",
+  "particle_lambdas": [
+    [
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ],
+      [
+        0.383290083670845,
+        0.3262350714513901,
+        0.08130064948870028,
+        0.2091741953890647
+      ]
+    ],
+    [
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ],
+      [
+        0.24852513957346015,
+        0.5187833390772728,
+        0.0,
+        0.23269152134926704
+      ]
+    ],
+    [
+      [
+        0.3993525292726003,
+        0.18121352876491556,
+        0.0,
+        0.4194339419624841
+      ],
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196471372845036,
+        0.4803528627154964,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.5285602147549855,
+        0.4714397852450145,
+        0.0,
+        0.0
+      ],
+      [
+        0.2198259183119002,
+        0.0,
+        0.4147867858765492,
+        0.36538729581155066
+      ],
+      [
+        0.6923976904570694,
+        0.0,
+        0.0,
+        0.30760230954293055
+      ],
+      [
+        0.5115302669188222,
+        0.0,
+        0.0,
+        0.4884697330811778
+      ],
+      [
+        0.0,
+        0.711219683507445,
+        0.0,
+        0.288780316492555
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.13405424426251764,
+        0.49902655889566044,
+        0.0,
+        0.36691919684182206
+      ],
+      [
+        0.5581383531207372,
+        0.15615199969743504,
+        0.2857096471818277,
+        0.0
+      ],
+      [
+        0.22538764015766305,
+        0.7746123598423369,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.900863996624607,
+        0.0,
+        0.099136003375393
+      ],
+      [
+        0.11468042654470512,
+        0.8853195734552949,
+        0.0,
+        0.0
+      ],
+      [
+        0.16479492382834354,
+        0.0,
+        0.3354922663394211,
+        0.4997128098322354
+      ],
+      [
+        0.6982074734677937,
+        0.0,
+        0.0,
+        0.3017925265322063
+      ],
+      [
+        0.3796374953947382,
+        0.0,
+        0.0,
+        0.6203625046052618
+      ],
+      [
+        0.0,
+        0.6774999322925239,
+        0.0,
+        0.3225000677074762
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "particles_per_source": 10,
+  "per_particle_lambda_frame_l2_max": 1.2740140818801493,
+  "per_particle_lambda_frame_l2_mean": 0.36494840333289535,
+  "plane_model": "one pooled [N,D] field; source ownership is metadata only",
+  "protocol": "two_pass_lambda_frame_comparison",
+  "proximal_steps": 50,
+  "quick": false,
+  "reference_forward_seconds": 2595.411705899998,
+  "reference_smoke": {
+    "initial": {
+      "angular_moment_error": 0.26356577590540425,
+      "angular_resultant": 0.08491395723270143,
+      "covariance_ratio": 0.20504760096025315,
+      "expected_radius_cv": 0.20412414523193154,
+      "finite": true,
+      "fitted_ball_radius": 2.3007258374521604,
+      "mean_pair_distance": 2.4364039373093216,
+      "mean_radius": 1.761187213442653,
+      "radial_cdf_gap": 0.270489777818626,
+      "radial_overflow": 0.16101364522417155,
+      "radial_zone_0": 0.22085769980506822,
+      "radial_zone_1": 0.23586744639376217,
+      "radial_zone_2": 0.11208576998050682,
+      "radial_zone_3": 0.06998050682261209,
+      "radial_zone_4": 0.0442495126705653,
+      "radial_zone_5": 0.05107212475633528,
+      "radial_zone_6": 0.03957115009746589,
+      "radial_zone_7": 0.028460038986354776,
+      "radial_zone_8": 0.018518518518518517,
+      "radial_zone_9": 0.018323586744639377,
+      "radius_cv": 0.37107835836570485,
+      "radius_q05": 0.4431051927683063,
+      "radius_q25": 0.5734050374745131,
+      "radius_q50": 0.6966342592812319,
+      "radius_q75": 0.8928167338478276,
+      "radius_q95": 1.3239654695280554,
+      "radius_ratio": 1.0,
+      "rms_radius": 1.8785347799317682
+    },
+    "terminal": {
+      "angular_moment_error": 0.023932705665778636,
+      "angular_resultant": 0.0002721179423718707,
+      "covariance_ratio": 0.820051525177272,
+      "expected_radius_cv": 0.20412414523193154,
+      "finite": true,
+      "fitted_ball_radius": 1.0760784012949756,
+      "mean_pair_distance": 1.1868286301210027,
+      "mean_radius": 0.858399955055599,
+      "radial_cdf_gap": 0.047368421052631615,
+      "radial_overflow": 0.047563352826510724,
+      "radial_zone_0": 0.11442495126705653,
+      "radial_zone_1": 0.10545808966861599,
+      "radial_zone_2": 0.10077972709551657,
+      "radial_zone_3": 0.09805068226120858,
+      "radial_zone_4": 0.08440545808966862,
+      "radial_zone_5": 0.07855750487329435,
+      "radial_zone_6": 0.08323586744639376,
+      "radial_zone_7": 0.10253411306042885,
+      "radial_zone_8": 0.11286549707602339,
+      "radial_zone_9": 0.07212475633528265,
+      "radius_cv": 0.21829421501512403,
+      "radius_q05": 0.45406073367575295,
+      "radius_q25": 0.6922433018840717,
+      "radius_q50": 0.8390742963830713,
+      "radius_q75": 0.9414396711222078,
+      "radius_q95": 0.9984114519453193,
+      "radius_ratio": 0.467712573040268,
+      "rms_radius": 0.8786143354675209
+    }
+  },
+  "reference_smoke_failure_reasons": [],
+  "reference_smoke_passed": true,
+  "reference_source_count": 513,
+  "reference_terminal_rmse": [
+    0.6328341582641602,
+    0.5995821334437488,
+    0.5354684961791395,
+    0.4257546167784372
+  ],
+  "saved_history": "compact endpoints only",
+  "seed": 45,
+  "shared_lambda_frame_l2": 0.2497984902894786,
+  "status": "complete",
+  "target_replay_seconds": 253.45210080000106,
+  "target_source_id": 257,
+  "terminal_to_arrival_amplification": [
+    0.7531387167448844,
+    0.7528725132641754,
+    0.7090287021883404,
+    0.9239452580225541
+  ],
+  "total_seconds": 5637.630280700003,
+  "vertex_maximum_relative_rmse": 0.00529005617483028,
+  "vertex_median_relative_rmse": 0.0012458676249763692,
+  "vertex_p95_relative_rmse": 0.002900518207449525,
+  "vertex_passed": true,
+  "vertex_seconds": 254.23172329999943,
+  "vertex_source_count": 4,
+  "workers": 8
+}

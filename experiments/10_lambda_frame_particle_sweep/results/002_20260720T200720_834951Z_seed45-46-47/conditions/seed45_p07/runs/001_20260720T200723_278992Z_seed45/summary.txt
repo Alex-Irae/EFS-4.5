@@ -1,0 +1,58 @@
+Experiment 10 lambda-frame and capacity comparison
+
+status: complete
+target source ID: 257
+saved d1 parent IDs: [385, 229, 391, 243]
+particles per source: 7
+mean KL(pass 1 || pass 2): 2.46053029e-04
+mean retained-particle terminal displacement: 2.84898967e-03
+vertex maximum relative RMSE: 4.97369462e-03
+
+method: shared_d1
+fit frame: d1
+in-frame lambda fit RMSE: 3.40589652e-01
+cross-frame RMSE: 5.17995823e-01
+pass-2 terminal RMSE: 5.17451392e-01
+direct d1 target RMSE: 3.40589652e-01
+arrival target RMSE: 3.94548346e-01
+EFS/direct ratio: 1.16515108e+00
+terminal-to-arrival amplification: 7.62483881e-01
+maximum replay residual: 1.05936556e-05
+
+method: shared_du
+fit frame: du
+in-frame lambda fit RMSE: 5.00196589e-01
+cross-frame RMSE: 3.53307343e-01
+pass-2 terminal RMSE: 4.99802784e-01
+direct d1 target RMSE: 3.53307343e-01
+arrival target RMSE: 3.79657692e-01
+EFS/direct ratio: 1.07996917e+00
+terminal-to-arrival amplification: 7.59615001e-01
+maximum replay residual: 8.79138613e-06
+
+method: per_particle_d1
+fit frame: d1
+in-frame lambda fit RMSE: 2.78325087e-01
+cross-frame RMSE: 4.73571230e-01
+pass-2 terminal RMSE: 4.70132491e-01
+direct d1 target RMSE: 2.78325087e-01
+arrival target RMSE: 2.88997154e-01
+EFS/direct ratio: 1.03917784e+00
+terminal-to-arrival amplification: 6.14714276e-01
+maximum replay residual: 7.98072659e-06
+
+method: per_particle_du
+fit frame: du
+in-frame lambda fit RMSE: 4.11821333e-01
+cross-frame RMSE: 3.16017910e-01
+pass-2 terminal RMSE: 4.09867725e-01
+direct d1 target RMSE: 3.16017910e-01
+arrival target RMSE: 3.71405930e-01
+EFS/direct ratio: 1.18004300e+00
+terminal-to-arrival amplification: 9.06160469e-01
+maximum replay residual: 1.02587413e-05
+
+Interpretation:
+du fitting is optimized for terminal seeding; d1 fitting tests barycentric frame transport.
+Per-particle methods are capacity controls and do not preserve formal shared-lambda H4.5 coupling.
+total runtime: 2336.79 s

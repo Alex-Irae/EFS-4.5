@@ -1,0 +1,13 @@
+Experiment 10 target-free operator inference
+
+status: complete
+parent source IDs: [0, 1, 2, 3]
+shared lambda: [0.22711436 0.25929809 0.40962438 0.10396317]
+lambda source: Dirichlet(1) sampled with seed 45
+replay versus direct d1 RMSE: 1.71456574e-02
+internal-relation change RMSE: 2.54669800e-02
+generated nearest-memory RMSE: 4.47762638e-01
+maximum replay residual: 1.58641637e-03
+
+No target accuracy is reported because this protocol has no hidden target.
+total runtime: 0.05 s

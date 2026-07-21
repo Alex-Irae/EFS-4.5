@@ -1,0 +1,26 @@
+EFS parameters: saved config E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\best_config.json; warning: selected with a different particles-per-source value
+pass 1, target present: 3591 particles in one pooled plane
+forward step     0/2000: mean_particle_distance=2.46572522 rms_radius=1.92817412 max_force=0.000000e+00 max_update=0.000000e+00
+forward step   100/2000: mean_particle_distance=2.26617245 rms_radius=1.76476701 max_force=6.540729e+00 max_update=6.540729e-03
+forward step   200/2000: mean_particle_distance=2.08310796 rms_radius=1.61646619 max_force=5.917544e+00 max_update=5.917544e-03
+forward step   300/2000: mean_particle_distance=1.92122773 rms_radius=1.48516139 max_force=5.353561e+00 max_update=5.353561e-03
+forward step   400/2000: mean_particle_distance=1.78043988 rms_radius=1.37048869 max_force=4.843071e+00 max_update=4.843071e-03
+forward step   500/2000: mean_particle_distance=1.65986271 rms_radius=1.27173509 max_force=4.380870e+00 max_update=4.380870e-03
+forward step   600/2000: mean_particle_distance=1.55824201 rms_radius=1.18800959 max_force=3.962193e+00 max_update=3.962193e-03
+forward step   700/2000: mean_particle_distance=1.47404908 rms_radius=1.11824950 max_force=3.582647e+00 max_update=3.582647e-03
+Traceback (most recent call last):
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\run.py", line 1602, in <module>
+    main()
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\run.py", line 1598, in main
+    run(build_parser().parse_args())
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\run.py", line 1529, in run
+    return run_two_pass(args)
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\run.py", line 888, in run_two_pass
+    reference_plane, reference_history, reference_forward, reference_passed, reference_reasons, reference_smoke, reference_seconds = _forward_pass(
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\run.py", line 308, in _forward_pass
+    history, diagnostics = forward_history(
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\efs.py", line 182, in forward_history
+    field = forward_field(current, epsilon, exponent_s)  # shape: [N,D]
+  File "E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\efs.py", line 96, in forward_field
+    weights = np.power(
+KeyboardInterrupt

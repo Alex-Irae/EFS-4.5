@@ -93,6 +93,7 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
     07_two_pass_reconstruction/
     08_local_replay_stability/
     09_final_diagnostics/
+    10_lambda_frame_particle_sweep/
 ```
 
 ## Experiment index
@@ -108,6 +109,7 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
 | [`07_two_pass_reconstruction`](experiments/07_two_pass_reconstruction/) | Is target removal the main failure cause?                                                      | No: the field shift was tiny and the shared terminal fit was already poor.                             |
 | [`08_local_replay_stability`](experiments/08_local_replay_stability/)   | Does a clean homogeneous field restore identities after terminal compression?                  | No in the clean 2D control; compressed pairs remained compressed.                                      |
 | [`09_final_diagnostics`](experiments/09_final_diagnostics/)             | Do more parents, local stability, and smooth lambda paths rescue H4.5?                         | Stop: $K=128$ remained inaccurate, replay worsened, and path amplification was high.                   |
+| [`10_lambda_frame_particle_sweep`](experiments/10_lambda_frame_particle_sweep/) | Do $d_1$-fitted or per-particle lambdas change the Experiment 07 result as particle count grows? | Partial negative: 16/30 conditions completed, and replay lost to direct interpolation in 61/64 method rows; the frame winner was inconsistent. |
 
 Each experiment owns its code when that code differs from the canonical root mechanism, plus its CSV, JSON, summaries, and figures.
 
@@ -158,6 +160,17 @@ cd experiments\09_final_diagnostics
 python run.py --output-root results
 python plotting.py results\<run-directory>
 ```
+
+Run a fresh Experiment 10 lambda-frame and particle-count sweep with live progress:
+
+```powershell
+cd experiments\10_lambda_frame_particle_sweep
+$conditionWorkers = 4
+$replayWorkers = 4
+conda run --no-capture-output -n anewomni python -u sweep.py --particles 1 2 3 4 5 6 7 8 9 10 --seeds 45 46 47 --source-count 512 --condition-workers $conditionWorkers --workers $replayWorkers --log-every 25 --output-root results
+```
+
+`--condition-workers` is the main CPU/RAM control. `--workers` affects only passive replay. Every child line is shown with a condition prefix and also saved in its per-attempt log.
 
 Run only the tiny final-diagnostics path check:
 

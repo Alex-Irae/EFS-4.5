@@ -1,0 +1,144 @@
+{
+  "by_particles": {
+    "1": {
+      "per_particle_d1": {
+        "median_cross_frame_rmse": 0.6960398658,
+        "median_direct_set_rmse": 0.8657845177,
+        "median_efs_direct_ratio": 0.9970123433,
+        "median_generated_set_rmse": 0.8847193944,
+        "median_generation_terminal_rmse": 0.6139380117,
+        "median_initial_candidate_rmse": 0.8657845177,
+        "median_lambda_fit_rmse": 0.8657845177,
+        "median_max_replay_residual": 0.004295190288,
+        "median_reference_terminal_rmse": 0.6960398658,
+        "median_terminal_gap": 0.6139380117,
+        "seeds": [
+          42
+        ]
+      },
+      "per_particle_du": {
+        "median_cross_frame_rmse": 0.8947024188,
+        "median_direct_set_rmse": 0.8947024188,
+        "median_efs_direct_ratio": 1.150003605,
+        "median_generated_set_rmse": 1.01974176,
+        "median_generation_terminal_rmse": 0.4281421805,
+        "median_initial_candidate_rmse": 0.8947024188,
+        "median_lambda_fit_rmse": 0.5033569695,
+        "median_max_replay_residual": 0.002659259179,
+        "median_reference_terminal_rmse": 0.5033569695,
+        "median_terminal_gap": 0.4281421805,
+        "seeds": [
+          42
+        ]
+      },
+      "shared_d1": {
+        "median_cross_frame_rmse": 0.6960398658,
+        "median_direct_set_rmse": 0.8657845177,
+        "median_efs_direct_ratio": 0.9970123433,
+        "median_generated_set_rmse": 0.8847193944,
+        "median_generation_terminal_rmse": 0.6139380117,
+        "median_initial_candidate_rmse": 0.8657845177,
+        "median_lambda_fit_rmse": 0.8657845177,
+        "median_max_replay_residual": 0.004295190288,
+        "median_reference_terminal_rmse": 0.6960398658,
+        "median_terminal_gap": 0.6139380117,
+        "seeds": [
+          42
+        ]
+      },
+      "shared_du": {
+        "median_cross_frame_rmse": 0.8947024188,
+        "median_direct_set_rmse": 0.8947024188,
+        "median_efs_direct_ratio": 1.150003605,
+        "median_generated_set_rmse": 1.01974176,
+        "median_generation_terminal_rmse": 0.4281421805,
+        "median_initial_candidate_rmse": 0.8947024188,
+        "median_lambda_fit_rmse": 0.5033569695,
+        "median_max_replay_residual": 0.002659259179,
+        "median_reference_terminal_rmse": 0.5033569695,
+        "median_terminal_gap": 0.4281421805,
+        "seeds": [
+          42
+        ]
+      }
+    },
+    "4": {
+      "per_particle_d1": {
+        "median_cross_frame_rmse": 0.714985039,
+        "median_direct_set_rmse": 0.5473450039,
+        "median_efs_direct_ratio": 1.193637021,
+        "median_generated_set_rmse": 0.6677990781,
+        "median_generation_terminal_rmse": 0.7128364799,
+        "median_initial_candidate_rmse": 0.5473450039,
+        "median_lambda_fit_rmse": 0.5473450039,
+        "median_max_replay_residual": 0.0001637232814,
+        "median_reference_terminal_rmse": 0.714985039,
+        "median_terminal_gap": 0.7128364799,
+        "seeds": [
+          42
+        ]
+      },
+      "per_particle_du": {
+        "median_cross_frame_rmse": 0.5807889742,
+        "median_direct_set_rmse": 0.5807889742,
+        "median_efs_direct_ratio": 1.197172681,
+        "median_generated_set_rmse": 0.7196908652,
+        "median_generation_terminal_rmse": 0.6875764464,
+        "median_initial_candidate_rmse": 0.5807889742,
+        "median_lambda_fit_rmse": 0.6881363209,
+        "median_max_replay_residual": 0.0001648822779,
+        "median_reference_terminal_rmse": 0.6881363209,
+        "median_terminal_gap": 0.6875764464,
+        "seeds": [
+          42
+        ]
+      },
+      "shared_d1": {
+        "median_cross_frame_rmse": 0.8582009672,
+        "median_direct_set_rmse": 0.6302468029,
+        "median_efs_direct_ratio": 1.203053037,
+        "median_generated_set_rmse": 0.7711264311,
+        "median_generation_terminal_rmse": 0.8583860314,
+        "median_initial_candidate_rmse": 0.6302468029,
+        "median_lambda_fit_rmse": 0.6302468029,
+        "median_max_replay_residual": 0.0001610325884,
+        "median_reference_terminal_rmse": 0.8582009672,
+        "median_terminal_gap": 0.8583860314,
+        "seeds": [
+          42
+        ]
+      },
+      "shared_du": {
+        "median_cross_frame_rmse": 0.6562580208,
+        "median_direct_set_rmse": 0.6562580208,
+        "median_efs_direct_ratio": 1.092772763,
+        "median_generated_set_rmse": 0.7194986016,
+        "median_generation_terminal_rmse": 0.8153919412,
+        "median_initial_candidate_rmse": 0.6562580208,
+        "median_lambda_fit_rmse": 0.8110484503,
+        "median_max_replay_residual": 0.0002033022394,
+        "median_reference_terminal_rmse": 0.8110484503,
+        "median_terminal_gap": 0.8153919412,
+        "seeds": [
+          42
+        ]
+      }
+    }
+  },
+  "completed_conditions": 2,
+  "experiment07_regression": {
+    "passed": false
+  },
+  "invalid_conditions": [],
+  "maximum_p1_shared_control_difference": 0.0,
+  "metric_rows": 8,
+  "paired_arrival_wins": {
+    "per_particle_d1": 2,
+    "per_particle_du": 0,
+    "shared_d1": 1,
+    "shared_du": 1,
+    "ties": 0
+  },
+  "status": "complete",
+  "total_conditions": 2
+}

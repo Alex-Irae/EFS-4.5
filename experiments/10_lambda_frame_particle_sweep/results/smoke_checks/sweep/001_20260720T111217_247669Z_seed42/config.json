@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-07-20T11:15:24.289366+00:00",
+  "condition_order": [
+    "seed42_p01",
+    "seed42_p04"
+  ],
+  "created_utc": "2026-07-20T11:12:17.247669+00:00",
+  "dimension": 4,
+  "method_names": [
+    "shared_d1",
+    "shared_du",
+    "per_particle_d1",
+    "per_particle_du"
+  ],
+  "parent_count": 4,
+  "particles": [
+    1,
+    4
+  ],
+  "python": "C:\\ProgramData\\miniconda3\\envs\\anewomni\\python.exe",
+  "runner": "E:\\Desktop\\AnewOmni\\4.5hypothesis\\experiments\\10_lambda_frame_particle_sweep\\run.py",
+  "seeds": [
+    42
+  ],
+  "source_count": 32,
+  "status": "complete",
+  "vertex_source_count": 4,
+  "workers": 4
+}

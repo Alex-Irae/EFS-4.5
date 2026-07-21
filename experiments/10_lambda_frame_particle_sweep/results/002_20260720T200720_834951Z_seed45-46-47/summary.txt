@@ -1,0 +1,12 @@
+Experiment 10 lambda-frame and particle-count sweep
+
+status: complete
+completed conditions: 30/30
+invalid conditions: []
+metric rows: 120
+Experiment 07 regression passed: not requested
+maximum P=1 shared/control difference: 0.000e+00
+paired arrival wins: {'shared_d1': 17, 'shared_du': 12, 'per_particle_d1': 26, 'per_particle_du': 3, 'ties': 2}
+
+du methods optimize terminal fit; d1 methods test barycentric coordinate transport.
+Per-particle methods are capacity controls, not formal H4.5 generators.

@@ -1,0 +1,491 @@
+EFS parameters: saved config E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\best_config.json; warning: selected with a different particles-per-source value
+pass 1, target present: 1539 particles in one pooled plane
+forward step     0/2000: mean_particle_distance=2.46448872 rms_radius=1.89464651 max_force=0.000000e+00 max_update=0.000000e+00
+forward step    25/2000: mean_particle_distance=2.41490760 rms_radius=1.85416674 max_force=7.655199e+00 max_update=7.655199e-03
+forward step    50/2000: mean_particle_distance=2.36436933 rms_radius=1.81367850 max_force=7.465944e+00 max_update=7.465944e-03
+forward step    75/2000: mean_particle_distance=2.31432155 rms_radius=1.77385934 max_force=7.281364e+00 max_update=7.281364e-03
+forward step   100/2000: mean_particle_distance=2.26517647 rms_radius=1.73490417 max_force=7.101343e+00 max_update=7.101343e-03
+forward step   125/2000: mean_particle_distance=2.21711520 rms_radius=1.69689611 max_force=6.925768e+00 max_update=6.925768e-03
+forward step   150/2000: mean_particle_distance=2.17023176 rms_radius=1.65987574 max_force=6.754528e+00 max_update=6.754528e-03
+forward step   175/2000: mean_particle_distance=2.12457882 rms_radius=1.62386345 max_force=6.587515e+00 max_update=6.587515e-03
+forward step   200/2000: mean_particle_distance=2.08018673 rms_radius=1.58886875 max_force=6.424625e+00 max_update=6.424625e-03
+forward step   225/2000: mean_particle_distance=2.03707265 rms_radius=1.55489483 max_force=6.265756e+00 max_update=6.265756e-03
+forward step   250/2000: mean_particle_distance=1.99524547 rms_radius=1.52194099 max_force=6.110806e+00 max_update=6.110806e-03
+forward step   275/2000: mean_particle_distance=1.95470865 rms_radius=1.49000404 max_force=5.959679e+00 max_update=5.959679e-03
+forward step   300/2000: mean_particle_distance=1.91546192 rms_radius=1.45907915 max_force=5.812279e+00 max_update=5.812279e-03
+forward step   325/2000: mean_particle_distance=1.87750234 rms_radius=1.42916037 max_force=5.668513e+00 max_update=5.668513e-03
+forward step   350/2000: mean_particle_distance=1.84082499 rms_radius=1.40024094 max_force=5.528291e+00 max_update=5.528291e-03
+forward step   375/2000: mean_particle_distance=1.80542334 rms_radius=1.37231346 max_force=5.391523e+00 max_update=5.391523e-03
+forward step   400/2000: mean_particle_distance=1.77128952 rms_radius=1.34537002 max_force=5.258123e+00 max_update=5.258123e-03
+forward step   425/2000: mean_particle_distance=1.73841441 rms_radius=1.31940221 max_force=5.128007e+00 max_update=5.128007e-03
+forward step   450/2000: mean_particle_distance=1.70678773 rms_radius=1.29440108 max_force=5.001092e+00 max_update=5.001092e-03
+forward step   475/2000: mean_particle_distance=1.67639798 rms_radius=1.27035718 max_force=4.877296e+00 max_update=4.877296e-03
+forward step   500/2000: mean_particle_distance=1.64723241 rms_radius=1.24726037 max_force=4.756542e+00 max_update=4.756542e-03
+forward step   525/2000: mean_particle_distance=1.61927694 rms_radius=1.22509986 max_force=4.638751e+00 max_update=4.638751e-03
+forward step   550/2000: mean_particle_distance=1.59251606 rms_radius=1.20386403 max_force=4.523849e+00 max_update=4.523849e-03
+forward step   575/2000: mean_particle_distance=1.56693280 rms_radius=1.18354041 max_force=4.411761e+00 max_update=4.411761e-03
+forward step   600/2000: mean_particle_distance=1.54250860 rms_radius=1.16411554 max_force=4.302416e+00 max_update=4.302416e-03
+forward step   625/2000: mean_particle_distance=1.51922333 rms_radius=1.14557495 max_force=4.195742e+00 max_update=4.195742e-03
+forward step   650/2000: mean_particle_distance=1.49705520 rms_radius=1.12790309 max_force=4.091669e+00 max_update=4.091669e-03
+forward step   675/2000: mean_particle_distance=1.47598080 rms_radius=1.11108327 max_force=3.990131e+00 max_update=3.990131e-03
+forward step   700/2000: mean_particle_distance=1.45597513 rms_radius=1.09509764 max_force=3.891059e+00 max_update=3.891059e-03
+forward step   725/2000: mean_particle_distance=1.43701161 rms_radius=1.07992725 max_force=3.794389e+00 max_update=3.794389e-03
+forward step   750/2000: mean_particle_distance=1.41906223 rms_radius=1.06555197 max_force=3.700056e+00 max_update=3.700056e-03
+forward step   775/2000: mean_particle_distance=1.40209760 rms_radius=1.05195062 max_force=3.607995e+00 max_update=3.607995e-03
+forward step   800/2000: mean_particle_distance=1.38608710 rms_radius=1.03910096 max_force=3.518146e+00 max_update=3.518146e-03
+forward step   825/2000: mean_particle_distance=1.37099901 rms_radius=1.02697982 max_force=3.430446e+00 max_update=3.430446e-03
+forward step   850/2000: mean_particle_distance=1.35680068 rms_radius=1.01556316 max_force=3.344833e+00 max_update=3.344833e-03
+forward step   875/2000: mean_particle_distance=1.34345872 rms_radius=1.00482619 max_force=3.261249e+00 max_update=3.261249e-03
+forward step   900/2000: mean_particle_distance=1.33093912 rms_radius=0.99474349 max_force=3.179632e+00 max_update=3.179632e-03
+forward step   925/2000: mean_particle_distance=1.31920750 rms_radius=0.98528916 max_force=3.099924e+00 max_update=3.099924e-03
+forward step   950/2000: mean_particle_distance=1.30822926 rms_radius=0.97643693 max_force=3.022065e+00 max_update=3.022065e-03
+forward step   975/2000: mean_particle_distance=1.29796978 rms_radius=0.96816029 max_force=2.945996e+00 max_update=2.945996e-03
+forward step  1000/2000: mean_particle_distance=1.28839455 rms_radius=0.96043268 max_force=2.871659e+00 max_update=2.871659e-03
+forward step  1025/2000: mean_particle_distance=1.27946938 rms_radius=0.95322758 max_force=2.798994e+00 max_update=2.798994e-03
+forward step  1050/2000: mean_particle_distance=1.27116054 rms_radius=0.94651864 max_force=2.727941e+00 max_update=2.727941e-03
+forward step  1075/2000: mean_particle_distance=1.26343485 rms_radius=0.94027984 max_force=2.658441e+00 max_update=2.658441e-03
+forward step  1100/2000: mean_particle_distance=1.25625989 rms_radius=0.93448556 max_force=2.590433e+00 max_update=2.590433e-03
+forward step  1125/2000: mean_particle_distance=1.24960402 rms_radius=0.92911069 max_force=2.523854e+00 max_update=2.523854e-03
+forward step  1150/2000: mean_particle_distance=1.24343653 rms_radius=0.92413077 max_force=2.458641e+00 max_update=2.458641e-03
+forward step  1175/2000: mean_particle_distance=1.23772770 rms_radius=0.91952199 max_force=2.394731e+00 max_update=2.394731e-03
+forward step  1200/2000: mean_particle_distance=1.23244885 rms_radius=0.91526134 max_force=2.332057e+00 max_update=2.332057e-03
+forward step  1225/2000: mean_particle_distance=1.22757242 rms_radius=0.91132659 max_force=2.270551e+00 max_update=2.270551e-03
+forward step  1250/2000: mean_particle_distance=1.22307200 rms_radius=0.90769642 max_force=2.210142e+00 max_update=2.210142e-03
+forward step  1275/2000: mean_particle_distance=1.21892231 rms_radius=0.90435037 max_force=2.150758e+00 max_update=2.150758e-03
+forward step  1300/2000: mean_particle_distance=1.21509930 rms_radius=0.90126893 max_force=2.092322e+00 max_update=2.092322e-03
+forward step  1325/2000: mean_particle_distance=1.21158009 rms_radius=0.89843354 max_force=2.034756e+00 max_update=2.034756e-03
+forward step  1350/2000: mean_particle_distance=1.20834300 rms_radius=0.89582658 max_force=1.977976e+00 max_update=1.977976e-03
+forward step  1375/2000: mean_particle_distance=1.20536755 rms_radius=0.89343138 max_force=1.921898e+00 max_update=1.921898e-03
+forward step  1400/2000: mean_particle_distance=1.20263439 rms_radius=0.89123222 max_force=1.866431e+00 max_update=1.866431e-03
+forward step  1425/2000: mean_particle_distance=1.20012535 rms_radius=0.88921430 max_force=1.811483e+00 max_update=1.811483e-03
+forward step  1450/2000: mean_particle_distance=1.19782337 rms_radius=0.88736375 max_force=1.756955e+00 max_update=1.756955e-03
+forward step  1475/2000: mean_particle_distance=1.19571246 rms_radius=0.88566757 max_force=1.702749e+00 max_update=1.702749e-03
+forward step  1500/2000: mean_particle_distance=1.19377767 rms_radius=0.88411359 max_force=1.648759e+00 max_update=1.648759e-03
+forward step  1525/2000: mean_particle_distance=1.19200507 rms_radius=0.88269049 max_force=1.594882e+00 max_update=1.594882e-03
+forward step  1550/2000: mean_particle_distance=1.19038169 rms_radius=0.88138772 max_force=1.541012e+00 max_update=1.541012e-03
+forward step  1575/2000: mean_particle_distance=1.18889544 rms_radius=0.88019549 max_force=1.487044e+00 max_update=1.487044e-03
+forward step  1600/2000: mean_particle_distance=1.18753514 rms_radius=0.87910469 max_force=1.432876e+00 max_update=1.432876e-03
+forward step  1625/2000: mean_particle_distance=1.18629041 rms_radius=0.87810692 max_force=1.378414e+00 max_update=1.378414e-03
+forward step  1650/2000: mean_particle_distance=1.18515164 rms_radius=0.87719440 max_force=1.323573e+00 max_update=1.323573e-03
+forward step  1675/2000: mean_particle_distance=1.18410998 rms_radius=0.87635995 max_force=1.268283e+00 max_update=1.268283e-03
+forward step  1700/2000: mean_particle_distance=1.18315724 rms_radius=0.87559696 max_force=1.212497e+00 max_update=1.212497e-03
+forward step  1725/2000: mean_particle_distance=1.18228590 rms_radius=0.87489934 max_force=1.156190e+00 max_update=1.156190e-03
+forward step  1750/2000: mean_particle_distance=1.18148902 rms_radius=0.87426150 max_force=1.099378e+00 max_update=1.099378e-03
+forward step  1775/2000: mean_particle_distance=1.18076026 rms_radius=0.87367830 max_force=1.042113e+00 max_update=1.042113e-03
+forward step  1800/2000: mean_particle_distance=1.18009378 rms_radius=0.87314505 max_force=9.845015e-01 max_update=9.845015e-04
+forward step  1825/2000: mean_particle_distance=1.17948422 rms_radius=0.87265742 max_force=9.267086e-01 max_update=9.267086e-04
+forward step  1850/2000: mean_particle_distance=1.17892670 rms_radius=0.87221148 max_force=8.689637e-01 max_update=8.689637e-04
+forward step  1875/2000: mean_particle_distance=1.17841672 rms_radius=0.87180361 max_force=8.115654e-01 max_update=8.115654e-04
+forward step  1900/2000: mean_particle_distance=1.17795019 rms_radius=0.87143051 max_force=7.548795e-01 max_update=7.548795e-04
+forward step  1925/2000: mean_particle_distance=1.17752334 rms_radius=0.87108917 max_force=6.993307e-01 max_update=6.993307e-04
+forward step  1950/2000: mean_particle_distance=1.17713276 rms_radius=0.87077681 max_force=6.453863e-01 max_update=6.453863e-04
+forward step  1975/2000: mean_particle_distance=1.17677529 rms_radius=0.87049091 max_force=5.935320e-01 max_update=5.935320e-04
+forward step  2000/2000: mean_particle_distance=1.17644807 rms_radius=0.87022918 max_force=5.442424e-01 max_update=5.442424e-04
+pass 2, target removed: 1536 particles in one pooled plane
+forward step     0/2000: mean_particle_distance=2.46343342 rms_radius=1.89394993 max_force=0.000000e+00 max_update=0.000000e+00
+forward step    25/2000: mean_particle_distance=2.41388656 rms_radius=1.85349070 max_force=7.657293e+00 max_update=7.657293e-03
+forward step    50/2000: mean_particle_distance=2.36337899 rms_radius=1.81302141 max_force=7.467986e+00 max_update=7.467986e-03
+forward step    75/2000: mean_particle_distance=2.31336064 rms_radius=1.77322054 max_force=7.283356e+00 max_update=7.283356e-03
+forward step   100/2000: mean_particle_distance=2.26424412 rms_radius=1.73428316 max_force=7.103285e+00 max_update=7.103285e-03
+forward step   125/2000: mean_particle_distance=2.21621073 rms_radius=1.69629248 max_force=6.927661e+00 max_update=6.927661e-03
+forward step   150/2000: mean_particle_distance=2.16935456 rms_radius=1.65928912 max_force=6.756374e+00 max_update=6.756374e-03
+forward step   175/2000: mean_particle_distance=2.12372836 rms_radius=1.62329349 max_force=6.589316e+00 max_update=6.589316e-03
+forward step   200/2000: mean_particle_distance=2.07936252 rms_radius=1.58831514 max_force=6.426382e+00 max_update=6.426382e-03
+forward step   225/2000: mean_particle_distance=2.03627424 rms_radius=1.55435730 max_force=6.267468e+00 max_update=6.267468e-03
+forward step   250/2000: mean_particle_distance=1.99447245 rms_radius=1.52141927 max_force=6.112476e+00 max_update=6.112476e-03
+forward step   275/2000: mean_particle_distance=1.95396062 rms_radius=1.48949790 max_force=5.961308e+00 max_update=5.961308e-03
+forward step   300/2000: mean_particle_distance=1.91473851 rms_radius=1.45858837 max_force=5.813867e+00 max_update=5.813867e-03
+forward step   325/2000: mean_particle_distance=1.87680322 rms_radius=1.42868475 max_force=5.670062e+00 max_update=5.670062e-03
+forward step   350/2000: mean_particle_distance=1.84014982 rms_radius=1.39978028 max_force=5.529801e+00 max_update=5.529801e-03
+forward step   375/2000: mean_particle_distance=1.80477180 rms_radius=1.37186760 max_force=5.392996e+00 max_update=5.392996e-03
+forward step   400/2000: mean_particle_distance=1.77066131 rms_radius=1.34493879 max_force=5.259560e+00 max_update=5.259560e-03
+forward step   425/2000: mean_particle_distance=1.73780924 rms_radius=1.31898545 max_force=5.129408e+00 max_update=5.129408e-03
+forward step   450/2000: mean_particle_distance=1.70620532 rms_radius=1.29399866 max_force=5.002458e+00 max_update=5.002458e-03
+forward step   475/2000: mean_particle_distance=1.67583803 rms_radius=1.26996893 max_force=4.878629e+00 max_update=4.878629e-03
+forward step   500/2000: mean_particle_distance=1.64669463 rms_radius=1.24688616 max_force=4.757842e+00 max_update=4.757842e-03
+forward step   525/2000: mean_particle_distance=1.61876101 rms_radius=1.22473953 max_force=4.640019e+00 max_update=4.640019e-03
+forward step   550/2000: mean_particle_distance=1.59202167 rms_radius=1.20351742 max_force=4.525086e+00 max_update=4.525086e-03
+forward step   575/2000: mean_particle_distance=1.56645960 rms_radius=1.18320734 max_force=4.412968e+00 max_update=4.412968e-03
+forward step   600/2000: mean_particle_distance=1.54205623 rms_radius=1.16379583 max_force=4.303592e+00 max_update=4.303592e-03
+forward step   625/2000: mean_particle_distance=1.51879137 rms_radius=1.14526839 max_force=4.196889e+00 max_update=4.196889e-03
+forward step   650/2000: mean_particle_distance=1.49664322 rms_radius=1.12760944 max_force=4.092789e+00 max_update=4.092789e-03
+forward step   675/2000: mean_particle_distance=1.47558833 rms_radius=1.11080229 max_force=3.991223e+00 max_update=3.991223e-03
+forward step   700/2000: mean_particle_distance=1.45560165 rms_radius=1.09482906 max_force=3.892124e+00 max_update=3.892124e-03
+forward step   725/2000: mean_particle_distance=1.43665659 rms_radius=1.07967077 max_force=3.795428e+00 max_update=3.795428e-03
+forward step   750/2000: mean_particle_distance=1.41872510 rms_radius=1.06530730 max_force=3.701069e+00 max_update=3.701069e-03
+forward step   775/2000: mean_particle_distance=1.40177776 rms_radius=1.05171742 max_force=3.608984e+00 max_update=3.608984e-03
+forward step   800/2000: mean_particle_distance=1.38578393 rms_radius=1.03887890 max_force=3.519111e+00 max_update=3.519111e-03
+forward step   825/2000: mean_particle_distance=1.37071188 rms_radius=1.02676855 max_force=3.431387e+00 max_update=3.431387e-03
+forward step   850/2000: mean_particle_distance=1.35652896 rms_radius=1.01536233 max_force=3.345752e+00 max_update=3.345752e-03
+forward step   875/2000: mean_particle_distance=1.34320174 rms_radius=1.00463543 max_force=3.262146e+00 max_update=3.262146e-03
+forward step   900/2000: mean_particle_distance=1.33069625 rms_radius=0.99456245 max_force=3.180508e+00 max_update=3.180508e-03
+forward step   925/2000: mean_particle_distance=1.31897809 rms_radius=0.98511746 max_force=3.100779e+00 max_update=3.100779e-03
+forward step   950/2000: mean_particle_distance=1.30801268 rms_radius=0.97627420 max_force=3.022899e+00 max_update=3.022899e-03
+forward step   975/2000: mean_particle_distance=1.29776540 rms_radius=0.96800617 max_force=2.946811e+00 max_update=2.946811e-03
+forward step  1000/2000: mean_particle_distance=1.28820176 rms_radius=0.96028681 max_force=2.872455e+00 max_update=2.872455e-03
+forward step  1025/2000: mean_particle_distance=1.27928758 rms_radius=0.95308959 max_force=2.799772e+00 max_update=2.799772e-03
+forward step  1050/2000: mean_particle_distance=1.27098914 rms_radius=0.94638817 max_force=2.728701e+00 max_update=2.728701e-03
+forward step  1075/2000: mean_particle_distance=1.26327330 rms_radius=0.94015653 max_force=2.659184e+00 max_update=2.659184e-03
+forward step  1100/2000: mean_particle_distance=1.25610764 rms_radius=0.93436905 max_force=2.591159e+00 max_update=2.591159e-03
+forward step  1125/2000: mean_particle_distance=1.24946053 rms_radius=0.92900064 max_force=2.524564e+00 max_update=2.524564e-03
+forward step  1150/2000: mean_particle_distance=1.24330129 rms_radius=0.92402683 max_force=2.459336e+00 max_update=2.459336e-03
+forward step  1175/2000: mean_particle_distance=1.23760021 rms_radius=0.91942384 max_force=2.395412e+00 max_update=2.395412e-03
+forward step  1200/2000: mean_particle_distance=1.23232864 rms_radius=0.91516863 max_force=2.332724e+00 max_update=2.332724e-03
+forward step  1225/2000: mean_particle_distance=1.22745902 rms_radius=0.91123901 max_force=2.271204e+00 max_update=2.271204e-03
+forward step  1250/2000: mean_particle_distance=1.22296495 rms_radius=0.90761365 max_force=2.210782e+00 max_update=2.210782e-03
+forward step  1275/2000: mean_particle_distance=1.21882121 rms_radius=0.90427211 max_force=2.151385e+00 max_update=2.151385e-03
+forward step  1300/2000: mean_particle_distance=1.21500373 rms_radius=0.90119489 max_force=2.092938e+00 max_update=2.092938e-03
+forward step  1325/2000: mean_particle_distance=1.21148966 rms_radius=0.89836343 max_force=2.035360e+00 max_update=2.035360e-03
+forward step  1350/2000: mean_particle_distance=1.20825736 rms_radius=0.89576013 max_force=1.978571e+00 max_update=1.978571e-03
+forward step  1375/2000: mean_particle_distance=1.20528634 rms_radius=0.89336834 max_force=1.922483e+00 max_update=1.922483e-03
+forward step  1400/2000: mean_particle_distance=1.20255729 rms_radius=0.89117235 max_force=1.867007e+00 max_update=1.867007e-03
+forward step  1425/2000: mean_particle_distance=1.20005206 rms_radius=0.88915738 max_force=1.812051e+00 max_update=1.812051e-03
+forward step  1450/2000: mean_particle_distance=1.19775360 rms_radius=0.88730956 max_force=1.757516e+00 max_update=1.757516e-03
+forward step  1475/2000: mean_particle_distance=1.19564594 rms_radius=0.88561591 max_force=1.703303e+00 max_update=1.703303e-03
+forward step  1500/2000: mean_particle_distance=1.19371418 rms_radius=0.88406428 max_force=1.649308e+00 max_update=1.649308e-03
+forward step  1525/2000: mean_particle_distance=1.19194437 rms_radius=0.88264335 max_force=1.595426e+00 max_update=1.595426e-03
+forward step  1550/2000: mean_particle_distance=1.19032358 rms_radius=0.88134259 max_force=1.541553e+00 max_update=1.541553e-03
+forward step  1575/2000: mean_particle_distance=1.18883973 rms_radius=0.88015222 max_force=1.487582e+00 max_update=1.487582e-03
+forward step  1600/2000: mean_particle_distance=1.18748165 rms_radius=0.87906314 max_force=1.433414e+00 max_update=1.433414e-03
+forward step  1625/2000: mean_particle_distance=1.18623896 rms_radius=0.87806695 max_force=1.378953e+00 max_update=1.378953e-03
+forward step  1650/2000: mean_particle_distance=1.18510210 rms_radius=0.87715589 max_force=1.324116e+00 max_update=1.324116e-03
+forward step  1675/2000: mean_particle_distance=1.18406219 rms_radius=0.87632278 max_force=1.268832e+00 max_update=1.268832e-03
+forward step  1700/2000: mean_particle_distance=1.18311107 rms_radius=0.87556102 max_force=1.213055e+00 max_update=1.213055e-03
+forward step  1725/2000: mean_particle_distance=1.18224121 rms_radius=0.87486453 max_force=1.156762e+00 max_update=1.156762e-03
+forward step  1750/2000: mean_particle_distance=1.18144571 rms_radius=0.87422772 max_force=1.099965e+00 max_update=1.099965e-03
+forward step  1775/2000: mean_particle_distance=1.18071821 rms_radius=0.87364546 max_force=1.042720e+00 max_update=1.042720e-03
+forward step  1800/2000: mean_particle_distance=1.18005289 rms_radius=0.87311306 max_force=9.851315e-01 max_update=9.851315e-04
+forward step  1825/2000: mean_particle_distance=1.17944439 rms_radius=0.87262621 max_force=9.273617e-01 max_update=9.273617e-04
+forward step  1850/2000: mean_particle_distance=1.17888783 rms_radius=0.87218097 max_force=8.696371e-01 max_update=8.696371e-04
+forward step  1875/2000: mean_particle_distance=1.17837874 rms_radius=0.87177373 max_force=8.122513e-01 max_update=8.122513e-04
+forward step  1900/2000: mean_particle_distance=1.17791301 rms_radius=0.87140120 max_force=7.555635e-01 max_update=7.555635e-04
+forward step  1925/2000: mean_particle_distance=1.17748690 rms_radius=0.87106037 max_force=6.999914e-01 max_update=6.999914e-04
+forward step  1950/2000: mean_particle_distance=1.17709697 rms_radius=0.87074847 max_force=6.459952e-01 max_update=6.459952e-04
+forward step  1975/2000: mean_particle_distance=1.17674011 rms_radius=0.87046298 max_force=5.940558e-01 max_update=5.940558e-04
+forward step  2000/2000: mean_particle_distance=1.17641342 rms_radius=0.87020161 max_force=5.446460e-01 max_update=5.446460e-04
+backward step     0/2000
+  vertex: median_particle_distance=1.24311596 mean_total_displacement=0.000000e+00 witness_total=[-0.92893 -0.71166  0.90895  0.82619]
+backward step    25/2000
+  vertex: median_particle_distance=1.24339523 mean_total_displacement=5.885566e-05 witness_total=[-0.92958 -0.71202  0.90982  0.82699]
+backward step    50/2000
+  vertex: median_particle_distance=1.24371529 mean_total_displacement=6.371554e-05 witness_total=[-0.93032 -0.71241  0.91078  0.82785]
+backward step    75/2000
+  vertex: median_particle_distance=1.24407398 mean_total_displacement=6.831094e-05 witness_total=[-0.93116 -0.71283  0.91181  0.82875]
+backward step   100/2000
+  vertex: median_particle_distance=1.24447379 mean_total_displacement=7.304456e-05 witness_total=[-0.93208 -0.71328  0.9129   0.82968]
+backward step   125/2000
+  vertex: median_particle_distance=1.24491859 mean_total_displacement=7.802119e-05 witness_total=[-0.9331  -0.71376  0.91407  0.83065]
+backward step   150/2000
+  vertex: median_particle_distance=1.24541279 mean_total_displacement=8.327983e-05 witness_total=[-0.93422 -0.71426  0.91531  0.83166]
+backward step   175/2000
+  vertex: median_particle_distance=1.24596136 mean_total_displacement=8.884589e-05 witness_total=[-0.93545 -0.7148   0.91663  0.83271]
+backward step   200/2000
+  vertex: median_particle_distance=1.24656969 mean_total_displacement=9.474282e-05 witness_total=[-0.9368  -0.71538  0.91803  0.83379]
+backward step   225/2000
+  vertex: median_particle_distance=1.24724374 mean_total_displacement=1.009948e-04 witness_total=[-0.93826 -0.716    0.91951  0.83492]
+backward step   250/2000
+  vertex: median_particle_distance=1.24799003 mean_total_displacement=1.076274e-04 witness_total=[-0.93986 -0.71667  0.92108  0.83609]
+backward step   275/2000
+  vertex: median_particle_distance=1.24881569 mean_total_displacement=1.146673e-04 witness_total=[-0.94159 -0.71739  0.92273  0.83731]
+backward step   300/2000
+  vertex: median_particle_distance=1.24972851 mean_total_displacement=1.221430e-04 witness_total=[-0.94346 -0.71817  0.92448  0.83857]
+backward step   325/2000
+  vertex: median_particle_distance=1.25073701 mean_total_displacement=1.300842e-04 witness_total=[-0.94549 -0.71901  0.92633  0.83988]
+backward step   350/2000
+  vertex: median_particle_distance=1.25185048 mean_total_displacement=1.385221e-04 witness_total=[-0.94767 -0.71992  0.92828  0.84125]
+backward step   375/2000
+  vertex: median_particle_distance=1.25307902 mean_total_displacement=1.474892e-04 witness_total=[-0.95003 -0.72091  0.93034  0.84268]
+backward step   400/2000
+  vertex: median_particle_distance=1.25443364 mean_total_displacement=1.570192e-04 witness_total=[-0.95257 -0.72198  0.93251  0.84418]
+backward step   425/2000
+  vertex: median_particle_distance=1.25592624 mean_total_displacement=1.671472e-04 witness_total=[-0.95529 -0.72315  0.9348   0.84574]
+backward step   450/2000
+  vertex: median_particle_distance=1.25756976 mean_total_displacement=1.779092e-04 witness_total=[-0.95821 -0.72441  0.93722  0.84738]
+backward step   475/2000
+  vertex: median_particle_distance=1.25937813 mean_total_displacement=1.893423e-04 witness_total=[-0.96133 -0.72579  0.93976  0.8491 ]
+backward step   500/2000
+  vertex: median_particle_distance=1.26136642 mean_total_displacement=2.014842e-04 witness_total=[-0.96468 -0.72729  0.94244  0.85092]
+backward step   525/2000
+  vertex: median_particle_distance=1.26355077 mean_total_displacement=2.143728e-04 witness_total=[-0.96825 -0.72892  0.94527  0.85284]
+backward step   550/2000
+  vertex: median_particle_distance=1.26594853 mean_total_displacement=2.280462e-04 witness_total=[-0.97206 -0.73069  0.94825  0.85486]
+backward step   575/2000
+  vertex: median_particle_distance=1.26857821 mean_total_displacement=2.425418e-04 witness_total=[-0.97611 -0.73262  0.95139  0.85701]
+backward step   600/2000
+  vertex: median_particle_distance=1.27145953 mean_total_displacement=2.578953e-04 witness_total=[-0.98043 -0.73472  0.95469  0.85929]
+backward step   625/2000
+  vertex: median_particle_distance=1.27461341 mean_total_displacement=2.741403e-04 witness_total=[-0.98503 -0.73701  0.95818  0.86171]
+backward step   650/2000
+  vertex: median_particle_distance=1.27806194 mean_total_displacement=2.913070e-04 witness_total=[-0.9899  -0.73949  0.96184  0.86429]
+backward step   675/2000
+  vertex: median_particle_distance=1.28182838 mean_total_displacement=3.094206e-04 witness_total=[-0.99508 -0.74219  0.9657   0.86704]
+backward step   700/2000
+  vertex: median_particle_distance=1.28593703 mean_total_displacement=3.285004e-04 witness_total=[-1.00057 -0.74512  0.96975  0.86997]
+backward step   725/2000
+  vertex: median_particle_distance=1.29041322 mean_total_displacement=3.485577e-04 witness_total=[-1.00638 -0.7483   0.97401  0.87309]
+backward step   750/2000
+  vertex: median_particle_distance=1.29528314 mean_total_displacement=3.695946e-04 witness_total=[-1.01253 -0.75174  0.97848  0.87642]
+backward step   775/2000
+  vertex: median_particle_distance=1.30057372 mean_total_displacement=3.916025e-04 witness_total=[-1.01904 -0.75547  0.98316  0.87997]
+backward step   800/2000
+  vertex: median_particle_distance=1.30631238 mean_total_displacement=4.145605e-04 witness_total=[-1.02591 -0.75949  0.98805  0.88375]
+backward step   825/2000
+  vertex: median_particle_distance=1.31252691 mean_total_displacement=4.384348e-04 witness_total=[-1.03318 -0.76384  0.99316  0.88777]
+backward step   850/2000
+  vertex: median_particle_distance=1.31924512 mean_total_displacement=4.631785e-04 witness_total=[-1.04085 -0.76851  0.99847  0.89205]
+backward step   875/2000
+  vertex: median_particle_distance=1.32649463 mean_total_displacement=4.887314e-04 witness_total=[-1.04894 -0.77354  1.004    0.89659]
+backward step   900/2000
+  vertex: median_particle_distance=1.33430255 mean_total_displacement=5.150219e-04 witness_total=[-1.05747 -0.77893  1.00973  0.9014 ]
+backward step   925/2000
+  vertex: median_particle_distance=1.34269528 mean_total_displacement=5.419680e-04 witness_total=[-1.06645 -0.7847   1.01564  0.90649]
+backward step   950/2000
+  vertex: median_particle_distance=1.35169830 mean_total_displacement=5.694813e-04 witness_total=[-1.0759  -0.79085  1.02175  0.91186]
+backward step   975/2000
+  vertex: median_particle_distance=1.36133605 mean_total_displacement=5.974694e-04 witness_total=[-1.08584 -0.79741  1.02802  0.91753]
+backward step  1000/2000
+  vertex: median_particle_distance=1.37163191 mean_total_displacement=6.258409e-04 witness_total=[-1.09626 -0.80437  1.03446  0.92349]
+backward step  1025/2000
+  vertex: median_particle_distance=1.38260833 mean_total_displacement=6.545095e-04 witness_total=[-1.10719 -0.81175  1.04106  0.92975]
+backward step  1050/2000
+  vertex: median_particle_distance=1.39428703 mean_total_displacement=6.833979e-04 witness_total=[-1.11862 -0.81954  1.04782  0.93631]
+backward step  1075/2000
+  vertex: median_particle_distance=1.40668917 mean_total_displacement=7.124421e-04 witness_total=[-1.13056 -0.82776  1.05474  0.94316]
+backward step  1100/2000
+  vertex: median_particle_distance=1.41983571 mean_total_displacement=7.415939e-04 witness_total=[-1.14301 -0.83639  1.06184  0.95031]
+backward step  1125/2000
+  vertex: median_particle_distance=1.43374752 mean_total_displacement=7.708220e-04 witness_total=[-1.15596 -0.84544  1.06911  0.95775]
+backward step  1150/2000
+  vertex: median_particle_distance=1.44844560 mean_total_displacement=8.001120e-04 witness_total=[-1.16942 -0.85491  1.07659  0.96547]
+backward step  1175/2000
+  vertex: median_particle_distance=1.46395102 mean_total_displacement=8.294643e-04 witness_total=[-1.18336 -0.8648   1.08428  0.97347]
+backward step  1200/2000
+  vertex: median_particle_distance=1.48028489 mean_total_displacement=8.588908e-04 witness_total=[-1.1978  -0.87511  1.09222  0.98173]
+backward step  1225/2000
+  vertex: median_particle_distance=1.49746816 mean_total_displacement=8.884108e-04 witness_total=[-1.21272 -0.88584  1.10043  0.99024]
+backward step  1250/2000
+  vertex: median_particle_distance=1.51552131 mean_total_displacement=9.180461e-04 witness_total=[-1.22813 -0.89699  1.10894  0.999  ]
+backward step  1275/2000
+  vertex: median_particle_distance=1.53446404 mean_total_displacement=9.478170e-04 witness_total=[-1.244   -0.90856  1.11776  1.008  ]
+backward step  1300/2000
+  vertex: median_particle_distance=1.55431489 mean_total_displacement=9.777383e-04 witness_total=[-1.26035 -0.92056  1.12691  1.01722]
+backward step  1325/2000
+  vertex: median_particle_distance=1.57509087 mean_total_displacement=1.007816e-03 witness_total=[-1.27716 -0.933    1.13642  1.02665]
+backward step  1350/2000
+  vertex: median_particle_distance=1.59680710 mean_total_displacement=1.038043e-03 witness_total=[-1.29444 -0.94587  1.14629  1.0363 ]
+backward step  1375/2000
+  vertex: median_particle_distance=1.61947649 mean_total_displacement=1.068402e-03 witness_total=[-1.31219 -0.95919  1.15654  1.04614]
+backward step  1400/2000
+  vertex: median_particle_distance=1.64310951 mean_total_displacement=1.098855e-03 witness_total=[-1.3304  -0.97296  1.16715  1.05616]
+backward step  1425/2000
+  vertex: median_particle_distance=1.66771400 mean_total_displacement=1.129351e-03 witness_total=[-1.34909 -0.9872   1.17814  1.06636]
+backward step  1450/2000
+  vertex: median_particle_distance=1.69329507 mean_total_displacement=1.159816e-03 witness_total=[-1.36825 -1.0019   1.18949  1.07672]
+backward step  1475/2000
+  vertex: median_particle_distance=1.71985503 mean_total_displacement=1.190156e-03 witness_total=[-1.3879  -1.01709  1.20119  1.08722]
+backward step  1500/2000
+  vertex: median_particle_distance=1.74739342 mean_total_displacement=1.220253e-03 witness_total=[-1.40803 -1.03277  1.21321  1.09786]
+backward step  1525/2000
+  vertex: median_particle_distance=1.77590703 mean_total_displacement=1.249968e-03 witness_total=[-1.42866 -1.04895  1.22554  1.1086 ]
+backward step  1550/2000
+  vertex: median_particle_distance=1.80538989 mean_total_displacement=1.279137e-03 witness_total=[-1.44977 -1.06565  1.23813  1.11942]
+backward step  1575/2000
+  vertex: median_particle_distance=1.83583326 mean_total_displacement=1.307573e-03 witness_total=[-1.47138 -1.08287  1.25096  1.13029]
+backward step  1600/2000
+  vertex: median_particle_distance=1.86722547 mean_total_displacement=1.335068e-03 witness_total=[-1.49347 -1.10065  1.26397  1.14119]
+backward step  1625/2000
+  vertex: median_particle_distance=1.89955153 mean_total_displacement=1.361386e-03 witness_total=[-1.51604 -1.11899  1.27713  1.15208]
+backward step  1650/2000
+  vertex: median_particle_distance=1.93279252 mean_total_displacement=1.386264e-03 witness_total=[-1.53905 -1.13792  1.29036  1.16292]
+backward step  1675/2000
+  vertex: median_particle_distance=1.96692445 mean_total_displacement=1.409394e-03 witness_total=[-1.56249 -1.15747  1.30361  1.17366]
+backward step  1700/2000
+  vertex: median_particle_distance=2.00191637 mean_total_displacement=1.430399e-03 witness_total=[-1.58629 -1.17767  1.31681  1.18427]
+backward step  1725/2000
+  vertex: median_particle_distance=2.03772755 mean_total_displacement=1.448789e-03 witness_total=[-1.6104  -1.19854  1.32987  1.1947 ]
+backward step  1750/2000
+  vertex: median_particle_distance=2.07430309 mean_total_displacement=1.463883e-03 witness_total=[-1.63473 -1.22012  1.34271  1.2049 ]
+backward step  1775/2000
+  vertex: median_particle_distance=2.11156751 mean_total_displacement=1.474701e-03 witness_total=[-1.65916 -1.24245  1.35522  1.21482]
+backward step  1800/2000
+  vertex: median_particle_distance=2.14941549 mean_total_displacement=1.479780e-03 witness_total=[-1.68354 -1.26554  1.36727  1.22441]
+backward step  1825/2000
+  vertex: median_particle_distance=2.18769825 mean_total_displacement=1.476901e-03 witness_total=[-1.70766 -1.28943  1.3787   1.23359]
+backward step  1850/2000
+  vertex: median_particle_distance=2.22620314 mean_total_displacement=1.462653e-03 witness_total=[-1.73124 -1.3141   1.38927  1.24225]
+backward step  1875/2000
+  vertex: median_particle_distance=2.26461988 mean_total_displacement=1.431751e-03 witness_total=[-1.75384 -1.33955  1.39867  1.25021]
+backward step  1900/2000
+  vertex: median_particle_distance=2.30247827 mean_total_displacement=1.376165e-03 witness_total=[-1.7748  -1.36576  1.40637  1.25715]
+backward step  1925/2000
+  vertex: median_particle_distance=2.33901453 mean_total_displacement=1.285700e-03 witness_total=[-1.793   -1.39264  1.41145  1.26247]
+backward step  1950/2000
+  vertex: median_particle_distance=2.37283000 mean_total_displacement=1.167162e-03 witness_total=[-1.8063  -1.41996  1.41213  1.26489]
+backward step  1975/2000
+  vertex: median_particle_distance=2.40076935 mean_total_displacement=1.264127e-03 witness_total=[-1.80964 -1.4469   1.40413  1.26128]
+backward step  2000/2000
+  vertex: median_particle_distance=2.41168866 mean_total_displacement=3.949302e-03 witness_total=[-1.78314 -1.46808  1.37152  1.23975]
+backward step     0/2000
+  shared_d1: median_particle_distance=1.23924466 mean_total_displacement=0.000000e+00 witness_total=[ 0.53921  0.67344 -0.74564  0.11638]
+backward step    25/2000
+  shared_d1: median_particle_distance=1.23271145 mean_total_displacement=1.426863e-03 witness_total=[ 0.55178  0.67695 -0.73334  0.13813]
+backward step    50/2000
+  shared_d1: median_particle_distance=1.22398612 mean_total_displacement=1.524453e-03 witness_total=[ 0.5689   0.6849  -0.7155   0.16946]
+backward step    75/2000
+  shared_d1: median_particle_distance=1.21964106 mean_total_displacement=4.406187e-04 witness_total=[ 0.57907  0.68808 -0.70625  0.1875 ]
+backward step   100/2000
+  shared_d1: median_particle_distance=1.21899796 mean_total_displacement=1.970550e-04 witness_total=[ 0.5823   0.68531 -0.70568  0.19173]
+backward step   125/2000
+  shared_d1: median_particle_distance=1.21913765 mean_total_displacement=2.370634e-04 witness_total=[ 0.58373  0.68045 -0.70742  0.19209]
+backward step   150/2000
+  shared_d1: median_particle_distance=1.21929253 mean_total_displacement=2.767922e-04 witness_total=[ 0.58474  0.67458 -0.70968  0.19115]
+backward step   175/2000
+  shared_d1: median_particle_distance=1.21929373 mean_total_displacement=3.232791e-04 witness_total=[ 0.58555  0.66778 -0.71204  0.18922]
+backward step   200/2000
+  shared_d1: median_particle_distance=1.21910533 mean_total_displacement=3.937476e-04 witness_total=[ 0.58605  0.65979 -0.71429  0.18599]
+backward step   225/2000
+  shared_d1: median_particle_distance=1.21871525 mean_total_displacement=5.187229e-04 witness_total=[ 0.58584  0.64999 -0.71616  0.18072]
+backward step   250/2000
+  shared_d1: median_particle_distance=1.21808177 mean_total_displacement=7.714545e-04 witness_total=[ 0.58389  0.63701 -0.71716  0.17191]
+backward step   275/2000
+  shared_d1: median_particle_distance=1.21719381 mean_total_displacement=1.278792e-03 witness_total=[ 0.57789  0.61789 -0.71633  0.1565 ]
+backward step   300/2000
+  shared_d1: median_particle_distance=1.21910430 mean_total_displacement=1.408354e-03 witness_total=[ 0.57014  0.59491 -0.71085  0.1309 ]
+backward step   325/2000
+  shared_d1: median_particle_distance=1.23269491 mean_total_displacement=1.520938e-03 witness_total=[ 0.58086  0.59158 -0.69582  0.10056]
+backward step   350/2000
+  shared_d1: median_particle_distance=1.24481507 mean_total_displacement=5.413726e-04 witness_total=[ 0.59405  0.5978  -0.68474  0.08259]
+backward step   375/2000
+  shared_d1: median_particle_distance=1.24860470 mean_total_displacement=1.952584e-04 witness_total=[ 0.59829  0.60241 -0.6836   0.07931]
+backward step   400/2000
+  shared_d1: median_particle_distance=1.24987693 mean_total_displacement=2.058670e-04 witness_total=[ 0.59979  0.6065  -0.68556  0.08021]
+backward step   425/2000
+  shared_d1: median_particle_distance=1.25062527 mean_total_displacement=2.235041e-04 witness_total=[ 0.60071  0.61065 -0.68832  0.08205]
+backward step   450/2000
+  shared_d1: median_particle_distance=1.25130330 mean_total_displacement=2.363432e-04 witness_total=[ 0.60155  0.61498 -0.69141  0.0841 ]
+backward step   475/2000
+  shared_d1: median_particle_distance=1.25201725 mean_total_displacement=2.484544e-04 witness_total=[ 0.60242  0.61953 -0.6947   0.08621]
+backward step   500/2000
+  shared_d1: median_particle_distance=1.25279800 mean_total_displacement=2.610087e-04 witness_total=[ 0.60336  0.62431 -0.6982   0.08836]
+backward step   525/2000
+  shared_d1: median_particle_distance=1.25366068 mean_total_displacement=2.743123e-04 witness_total=[ 0.60438  0.62935 -0.7019   0.09054]
+backward step   550/2000
+  shared_d1: median_particle_distance=1.25461768 mean_total_displacement=2.884754e-04 witness_total=[ 0.60548  0.63466 -0.70581  0.09275]
+backward step   575/2000
+  shared_d1: median_particle_distance=1.25568155 mean_total_displacement=3.035646e-04 witness_total=[ 0.60668  0.64025 -0.70995  0.09499]
+backward step   600/2000
+  shared_d1: median_particle_distance=1.25686566 mean_total_displacement=3.196358e-04 witness_total=[ 0.60799  0.64614 -0.71433  0.09726]
+backward step   625/2000
+  shared_d1: median_particle_distance=1.25818441 mean_total_displacement=3.367411e-04 witness_total=[ 0.60943  0.65235 -0.71896  0.09957]
+backward step   650/2000
+  shared_d1: median_particle_distance=1.25965329 mean_total_displacement=3.549298e-04 witness_total=[ 0.61101  0.6589  -0.72386  0.10192]
+backward step   675/2000
+  shared_d1: median_particle_distance=1.26128900 mean_total_displacement=3.742484e-04 witness_total=[ 0.61274  0.6658  -0.72904  0.10431]
+backward step   700/2000
+  shared_d1: median_particle_distance=1.26310941 mean_total_displacement=3.947413e-04 witness_total=[ 0.61465  0.67308 -0.73452  0.10674]
+backward step   725/2000
+  shared_d1: median_particle_distance=1.26513368 mean_total_displacement=4.164495e-04 witness_total=[ 0.61676  0.68074 -0.74032  0.10922]
+backward step   750/2000
+  shared_d1: median_particle_distance=1.26738227 mean_total_displacement=4.394114e-04 witness_total=[ 0.61907  0.68882 -0.74645  0.11175]
+backward step   775/2000
+  shared_d1: median_particle_distance=1.26987694 mean_total_displacement=4.636620e-04 witness_total=[ 0.62163  0.69733 -0.75294  0.11434]
+backward step   800/2000
+  shared_d1: median_particle_distance=1.27264077 mean_total_displacement=4.892331e-04 witness_total=[ 0.62444  0.70628 -0.7598   0.11697]
+backward step   825/2000
+  shared_d1: median_particle_distance=1.27569814 mean_total_displacement=5.161534e-04 witness_total=[ 0.62753  0.7157  -0.76706  0.11966]
+backward step   850/2000
+  shared_d1: median_particle_distance=1.27907465 mean_total_displacement=5.444489e-04 witness_total=[ 0.63092  0.7256  -0.77474  0.12241]
+backward step   875/2000
+  shared_d1: median_particle_distance=1.28279707 mean_total_displacement=5.741444e-04 witness_total=[ 0.63464  0.736   -0.78286  0.12521]
+backward step   900/2000
+  shared_d1: median_particle_distance=1.28689316 mean_total_displacement=6.052650e-04 witness_total=[ 0.6387   0.74692 -0.79146  0.12807]
+backward step   925/2000
+  shared_d1: median_particle_distance=1.29139161 mean_total_displacement=6.378388e-04 witness_total=[ 0.64312  0.75838 -0.80055  0.13098]
+backward step   950/2000
+  shared_d1: median_particle_distance=1.29632175 mean_total_displacement=6.718999e-04 witness_total=[ 0.64792  0.77039 -0.81015  0.13395]
+backward step   975/2000
+  shared_d1: median_particle_distance=1.30171345 mean_total_displacement=7.074912e-04 witness_total=[ 0.65312  0.78298 -0.82031  0.13697]
+backward step  1000/2000
+  shared_d1: median_particle_distance=1.30759686 mean_total_displacement=7.446678e-04 witness_total=[ 0.65873  0.79619 -0.83102  0.14003]
+backward step  1025/2000
+  shared_d1: median_particle_distance=1.31400226 mean_total_displacement=7.834988e-04 witness_total=[ 0.66476  0.81003 -0.84233  0.14314]
+backward step  1050/2000
+  shared_d1: median_particle_distance=1.32095984 mean_total_displacement=8.240687e-04 witness_total=[ 0.67122  0.82454 -0.85426  0.14629]
+backward step  1075/2000
+  shared_d1: median_particle_distance=1.32849962 mean_total_displacement=8.664773e-04 witness_total=[ 0.67813  0.83977 -0.86681  0.14947]
+backward step  1100/2000
+  shared_d1: median_particle_distance=1.33665133 mean_total_displacement=9.108380e-04 witness_total=[ 0.68548  0.85576 -0.88001  0.15268]
+backward step  1125/2000
+  shared_d1: median_particle_distance=1.34544439 mean_total_displacement=9.572747e-04 witness_total=[ 0.6933   0.87256 -0.89388  0.1559 ]
+backward step  1150/2000
+  shared_d1: median_particle_distance=1.35490791 mean_total_displacement=1.005918e-03 witness_total=[ 0.70159  0.89024 -0.90842  0.15914]
+backward step  1175/2000
+  shared_d1: median_particle_distance=1.36507081 mean_total_displacement=1.056896e-03 witness_total=[ 0.71036  0.90885 -0.92366  0.16238]
+backward step  1200/2000
+  shared_d1: median_particle_distance=1.37596195 mean_total_displacement=1.110334e-03 witness_total=[ 0.71961  0.92847 -0.93959  0.16563]
+backward step  1225/2000
+  shared_d1: median_particle_distance=1.38761030 mean_total_displacement=1.166336e-03 witness_total=[ 0.72937  0.94917 -0.95623  0.16887]
+backward step  1250/2000
+  shared_d1: median_particle_distance=1.40004520 mean_total_displacement=1.224983e-03 witness_total=[ 0.73963  0.97103 -0.97359  0.17211]
+backward step  1275/2000
+  shared_d1: median_particle_distance=1.41329649 mean_total_displacement=1.286322e-03 witness_total=[ 0.75043  0.99412 -0.99167  0.17533]
+backward step  1300/2000
+  shared_d1: median_particle_distance=1.42739470 mean_total_displacement=1.350358e-03 witness_total=[ 0.76176  1.01852 -1.01048  0.17854]
+backward step  1325/2000
+  shared_d1: median_particle_distance=1.44237099 mean_total_displacement=1.417049e-03 witness_total=[ 0.77364  1.04431 -1.03003  0.18175]
+backward step  1350/2000
+  shared_d1: median_particle_distance=1.45825711 mean_total_displacement=1.486304e-03 witness_total=[ 0.78609  1.07156 -1.05031  0.18494]
+backward step  1375/2000
+  shared_d1: median_particle_distance=1.47508505 mean_total_displacement=1.557986e-03 witness_total=[ 0.79913  1.10034 -1.07134  0.18812]
+backward step  1400/2000
+  shared_d1: median_particle_distance=1.49288668 mean_total_displacement=1.631920e-03 witness_total=[ 0.81277  1.13071 -1.09311  0.19129]
+backward step  1425/2000
+  shared_d1: median_particle_distance=1.51169323 mean_total_displacement=1.707906e-03 witness_total=[ 0.82702  1.16273 -1.11563  0.19446]
+backward step  1450/2000
+  shared_d1: median_particle_distance=1.53153475 mean_total_displacement=1.785734e-03 witness_total=[ 0.84192  1.19646 -1.13888  0.19762]
+backward step  1475/2000
+  shared_d1: median_particle_distance=1.55243954 mean_total_displacement=1.865209e-03 witness_total=[ 0.85746  1.23194 -1.16288  0.20077]
+backward step  1500/2000
+  shared_d1: median_particle_distance=1.57443368 mean_total_displacement=1.946165e-03 witness_total=[ 0.87368  1.26921 -1.1876   0.20391]
+backward step  1525/2000
+  shared_d1: median_particle_distance=1.59754057 mean_total_displacement=2.028485e-03 witness_total=[ 0.8906   1.30831 -1.21306  0.20704]
+backward step  1550/2000
+  shared_d1: median_particle_distance=1.62178058 mean_total_displacement=2.112116e-03 witness_total=[ 0.90822  1.34927 -1.23923  0.21013]
+backward step  1575/2000
+  shared_d1: median_particle_distance=1.64717071 mean_total_displacement=2.197079e-03 witness_total=[ 0.92657  1.39213 -1.26611  0.21319]
+backward step  1600/2000
+  shared_d1: median_particle_distance=1.67372436 mean_total_displacement=2.283481e-03 witness_total=[ 0.94567  1.43692 -1.2937   0.21621]
+backward step  1625/2000
+  shared_d1: median_particle_distance=1.70145101 mean_total_displacement=2.371520e-03 witness_total=[ 0.96554  1.48368 -1.32199  0.21916]
+backward step  1650/2000
+  shared_d1: median_particle_distance=1.73035587 mean_total_displacement=2.461504e-03 witness_total=[ 0.98619  1.53246 -1.35097  0.22204]
+backward step  1675/2000
+  shared_d1: median_particle_distance=1.76043954 mean_total_displacement=2.553862e-03 witness_total=[ 1.00764  1.58332 -1.38065  0.22484]
+backward step  1700/2000
+  shared_d1: median_particle_distance=1.79169729 mean_total_displacement=2.649177e-03 witness_total=[ 1.02993  1.63631 -1.41103  0.22753]
+backward step  1725/2000
+  shared_d1: median_particle_distance=1.82411822 mean_total_displacement=2.748231e-03 witness_total=[ 1.05305  1.69153 -1.44212  0.2301 ]
+backward step  1750/2000
+  shared_d1: median_particle_distance=1.85768391 mean_total_displacement=2.852080e-03 witness_total=[ 1.07705  1.74909 -1.47393  0.23254]
+backward step  1775/2000
+  shared_d1: median_particle_distance=1.89236630 mean_total_displacement=2.962179e-03 witness_total=[ 1.10193  1.80913 -1.50647  0.23485]
+backward step  1800/2000
+  shared_d1: median_particle_distance=1.92812454 mean_total_displacement=3.080605e-03 witness_total=[ 1.12772  1.87183 -1.53978  0.23703]
+backward step  1825/2000
+  shared_d1: median_particle_distance=1.96489978 mean_total_displacement=3.210452e-03 witness_total=[ 1.15446  1.93745 -1.5739   0.23911]
+backward step  1850/2000
+  shared_d1: median_particle_distance=2.00260677 mean_total_displacement=3.356576e-03 witness_total=[ 1.18216  2.00635 -1.60891  0.24115]
+backward step  1875/2000
+  shared_d1: median_particle_distance=2.04111944 mean_total_displacement=3.527070e-03 witness_total=[ 1.21086  2.07904 -1.64491  0.24323]
+backward step  1900/2000
+  shared_d1: median_particle_distance=2.08024417 mean_total_displacement=3.736452e-03 witness_total=[ 1.24059  2.15633 -1.68206  0.24555]
+backward step  1925/2000
+  shared_d1: median_particle_distance=2.11966411 mean_total_displacement=4.013562e-03 witness_total=[ 1.27141  2.2396  -1.72059  0.2484 ]
+backward step  1950/2000
+  shared_d1: median_particle_distance=2.15879593 mean_total_displacement=4.426916e-03 witness_total=[ 1.30343  2.3314  -1.76082  0.25225]
+backward step  1975/2000
+  shared_d1: median_particle_distance=2.19625196 mean_total_displacement=5.214191e-03 witness_total=[ 1.33733  2.43775 -1.80333  0.25746]
+backward step  2000/2000
+  shared_d1: median_particle_distance=2.22654303 mean_total_displacement=8.749574e-03 witness_total=[ 1.38089  2.58456 -1.85107  0.25983]
+RESULT_DIRECTORY=E:\Desktop\AnewOmni\4.5hypothesis\experiments\10_lambda_frame_particle_sweep\results\002_20260720T200720_834951Z_seed45-46-47\conditions\seed46_p03\runs\001_20260720T205330_877030Z_seed46
+generated 2 figure(s)
