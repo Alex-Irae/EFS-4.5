@@ -16,6 +16,8 @@ Under this baseline, the EFS field itself remained numerically usable and exact 
 
 - replay did not consistently outperform direct interpolation using the same parents and lambda;
 
+- neither $d_1$ nor $d_u$ lambda fitting, including per-particle capacity controls, repaired passive replay;
+
 - terminal identity compression was not reversed by passive replay;
 
 - smooth lambda paths crossed replay regions through strongly amplified output steps.
@@ -42,7 +44,7 @@ See [`docs/experiment_ledger.md`](docs/experiment_ledger.md) for the evidence an
 | Canonical reconstruction runner  | `run.py`                          | Runs the one-plane single-pass toys or two-pass target-removal protocol.             |
 | Numerical calibration            | `search.py`                       | Selects EFS parameters without using target-recovery outcomes.                       |
 | Historical model variants        | `experiments/01` through `03`     | Preserves equations that differ from the canonical pooled model.                     |
-| Final mechanism tests            | `experiments/08` and `09`         | Tests identity compression, parent capacity, local sensitivity, and path continuity. |
+| Final mechanism test             | `experiments/10`                  | Tests whether lambda frame or per-particle capacity changes the negative replay result. |
 
 ## Mathematical formulation
 
@@ -92,7 +94,7 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
     06_strong_contraction/
     07_two_pass_reconstruction/
     08_local_replay_stability/
-    09_final_diagnostics/
+    09_parent_capacity_sensitivity_paths/
     10_lambda_frame_particle_sweep/
 ```
 
@@ -108,8 +110,8 @@ The same lambda is used for every $p$. It correlates initialization only. Genera
 | [`06_strong_contraction`](experiments/06_strong_contraction/)           | Do more forward steps and stronger contraction repair recovery?                                | Negative: $2/16$ wins and a shell-like endpoint.                                                       |
 | [`07_two_pass_reconstruction`](experiments/07_two_pass_reconstruction/) | Is target removal the main failure cause?                                                      | No: the field shift was tiny and the shared terminal fit was already poor.                             |
 | [`08_local_replay_stability`](experiments/08_local_replay_stability/)   | Does a clean homogeneous field restore identities after terminal compression?                  | No in the clean 2D control; compressed pairs remained compressed.                                      |
-| [`09_final_diagnostics`](experiments/09_final_diagnostics/)             | Do more parents, local stability, and smooth lambda paths rescue H4.5?                         | Stop: $K=128$ remained inaccurate, replay worsened, and path amplification was high.                   |
-| [`10_lambda_frame_particle_sweep`](experiments/10_lambda_frame_particle_sweep/) | Do $d_1$-fitted or per-particle lambdas change the Experiment 07 result as particle count grows? | Partial negative: 16/30 conditions completed, and replay lost to direct interpolation in 61/64 method rows; the frame winner was inconsistent. |
+| [`09_parent_capacity_sensitivity_paths`](experiments/09_parent_capacity_sensitivity_paths/) | Do more parents, local stability, and smooth lambda paths rescue H4.5? | Stop: $K=128$ remained inaccurate, replay worsened, and path amplification was high. |
+| [`10_lambda_frame_particle_sweep`](experiments/10_lambda_frame_particle_sweep/) | Do $d_1$-fitted or per-particle lambdas change the Experiment 07 result as particle count grows? | Final stop: replay lost to direct interpolation in 110/120 full-sweep method rows, and neither lambda frame rescued it. |
 
 Each experiment owns its code when that code differs from the canonical root mechanism, plus its CSV, JSON, summaries, and figures.
 
@@ -153,10 +155,10 @@ Re-run the canonical one-plane calibration without writing a root-level result f
 python search.py --workers 4 --output-root experiments\03_slot_single_calibration\results
 ```
 
-Run the final diagnostics:
+Run the parent-capacity, sensitivity, and path diagnostics:
 
 ```powershell
-cd experiments\09_final_diagnostics
+cd experiments\09_parent_capacity_sensitivity_paths
 python run.py --output-root results
 python plotting.py results\<run-directory>
 ```
@@ -172,10 +174,10 @@ conda run --no-capture-output -n anewomni python -u sweep.py --particles 1 2 3 4
 
 `--condition-workers` is the main CPU/RAM control. `--workers` affects only passive replay. Every child line is shown with a condition prefix and also saved in its per-attempt log.
 
-Run only the tiny final-diagnostics path check:
+Run only the tiny Experiment 09 path check:
 
 ```powershell
-cd experiments\09_final_diagnostics
+cd experiments\09_parent_capacity_sensitivity_paths
 python run.py --quick --output-root results
 ```
 

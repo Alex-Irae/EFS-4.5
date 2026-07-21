@@ -1,6 +1,6 @@
-# Final Single-Plane H4.5 Diagnostics
+# H4.5 Parent-Capacity, Sensitivity, and Path Diagnostics
 
-This folder implements the final three diagnostics specified after the earlier H4.5 failures. The original planning document has been merged into this README. The experiment does not change the canonical root EFS code.
+This folder implements three diagnostics specified after the earlier H4.5 failures. The original planning document has been merged into this README. The experiment does not change the canonical root EFS code.
 
 The goal is to distinguish:
 
@@ -275,7 +275,7 @@ Default moderate run, one seed and one shared history:
 python run.py --output-root results
 ```
 
-Larger final run matching the earlier source scale more closely:
+Larger run matching the earlier source scale more closely:
 
 ```powershell
 python run.py --seeds 4652 61 73 --source-count 512 --targets 16 --particles-per-source 10 --workers 12 --output-root results

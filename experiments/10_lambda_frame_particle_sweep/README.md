@@ -212,12 +212,8 @@ Every condition creates a new numbered result directory with:
 
 The sweep directory adds `progress.json`, per-attempt logs, `particle_sweep.csv`, `summary.json`, `summary.txt`, and `particle_sweep.png`. Existing attempts and results are never overwritten.
 
-## Result
+## Final conclusion
 
-The interrupted first sweep at `results/001_20260720T111809_739219Z_seed42-43-44` contains 16 complete conditions and 64 method rows. Seed 42 is complete for $P=1,\ldots,10$; seed 43 is complete for $P=1,\ldots,6$. The interrupted seed-43, $P=7$ attempt is not counted. This is an unbalanced partial grid, so it is not a finished three-seed comparison.
+The complete seed-45/46/47 sweep finished all 30 conditions with no invalid EFS runs. Replay lost to same-lambda direct interpolation in `110/120` method rows, and each formal shared method won only `2/30`. Across both saved sweeps, replay lost `171/184` rows. Shared $d_1$ and $d_u$ fitting were effectively tied, while per-particle capacity improved representation but did not repair replay.
 
-The partial evidence is negative for EFS replay. Replay beat the same-lambda direct $d_1$ interpolation in only 3 of 64 method rows. Median replay/direct ratios were `1.256` for `shared_d1`, `1.165` for `shared_du`, `1.278` for `per_particle_d1`, and `1.241` for `per_particle_du`; values above one mean replay increased error. Median arrival RMSE was `0.481`, `0.463`, `0.340`, and `0.402`, respectively. Per-particle $d_1$ capacity often reduced absolute arrival error, but it is an evaluation control rather than the formal shared-lambda operator, and its median replay/direct ratio was the worst of the four.
-
-Frame choice is inconclusive rather than a clean win. In paired arrival comparisons, shared $d_u$ won 9 conditions and shared $d_1$ won 6, while per-particle $d_1$ won 10 and per-particle $d_u$ won 4; the three ties are the algebraically identical $P=1$ controls. This interaction says representation capacity and frame transfer are entangled. It does not support the claim that fitting at either frame repairs replay distortion.
-
-The acceptance controls that were reached passed: $P=1$ shared/per-particle differences were exactly zero, no completed EFS condition was invalid, and Experiment 07 shared-$d_u$, $P=10$, seed-42 reproduced to absolute differences between approximately $10^{-12}$ and $3\times10^{-10}$. These checks support implementation consistency, not molecular validity or a positive H4.5 result.
+Experiment 10 is therefore the final stop result for this route: shared lambda acts as an initialization constraint, not persistent source-level coupling. Passive EFS replay is unsupported as a standalone generator in this synthetic setting, without implying a molecular-validity result or formal disproof on meaningful aligned latents.

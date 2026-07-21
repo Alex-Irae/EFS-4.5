@@ -1,4 +1,4 @@
-"""Regenerate final H4.5 diagnostic figures from saved CSV files.
+"""Regenerate Experiment 09 parent-capacity, sensitivity, and path figures.
 
 Purpose:
     Plot the parent-count, local-sensitivity, and lambda-path measurements
@@ -302,7 +302,9 @@ def plot_all(directory: Path) -> list[Path]:
 
 def main() -> None:
     """Parse one result directory and regenerate its figures."""
-    parser = argparse.ArgumentParser(description="Regenerate final H4.5 diagnostic figures.")
+    parser = argparse.ArgumentParser(
+        description="Regenerate Experiment 09 parent-capacity, sensitivity, and path figures."
+    )
     parser.add_argument("run_directory", type=Path, help="Timestamped result directory created by run.py.")
     args = parser.parse_args()
     figures = plot_all(args.run_directory)
