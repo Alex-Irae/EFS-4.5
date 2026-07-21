@@ -55,8 +55,8 @@ The formal H4.5 claim also assumes that the source objects are complete, locally
 | Strong-contraction 2D toy                 | EFS beat direct interpolation in 2 of 16 trials                                                      | Negative                                         | More contraction produced a shell-like endpoint and did not repair the terminal seed                     |
 | Two-pass target removal                   | Arrival was slightly worse than direct interpolation; pass-1 and pass-2 fields were almost identical | Negative for the tested reconstruction           | The shared terminal fit was already poor before replay; removing one source was not the main cause       |
 | Homogeneous created-target replay         | Close terminal seeds stayed close in 2D even with accurate inversion                                 | Negative mechanism evidence                      | Passive backward replay did not restore identity after terminal compression                              |
-| Final parent, sensitivity, and path tests | $K=128$ still fitted poorly, replay worsened, and lambda paths amplified steps strongly              | Stop result                                      | More parent capacity did not survive replay and the path map remained difficult to control               |
-| Lambda-frame and particle-count sweep     | Partial grid: replay lost to direct interpolation in 61 of 64 method rows                            | Negative partial result; frame comparison mixed  | Capacity changed absolute error, but neither $d_1$ nor $d_u$ fitting repaired replay distortion           |
+| Parent-capacity, sensitivity, and path tests | $K=128$ still fitted poorly, replay worsened, and lambda paths amplified steps strongly            | Stop result                                      | More parent capacity did not survive replay and the path map remained difficult to control               |
+| Lambda-frame and particle-count sweep     | Full grid: replay lost to direct interpolation in 110 of 120 method rows                            | Final stop result                                | Neither fitting frame nor per-particle capacity repaired passive replay                                  |
 
 ## 1. Structured synthetic families and rotations
 
@@ -411,11 +411,11 @@ Passive generated particles do not repel one another and do not know their sourc
 
 This is the clearest negative mechanism evidence. It does not prove that every shared-lambda seed fails, but it shows that vanilla passive backward replay cannot be expected to undo terminal identity compression by itself.
 
-## 11. Final parent-capacity, local-sensitivity, and path-continuity tests
+## 11. Parent-capacity, local-sensitivity, and path-continuity tests
 
 ### Tested idea
 
-The final suite reused one target-free field to ask whether the earlier failure came from too few parents or from an uncontrollable inverse map. It swept $K\in\{4,8,16,32,64,128\}$, perturbed exact terminal vertices, and replayed smooth two-parent lambda paths.
+The suite reused one target-free field to ask whether the earlier failure came from too few parents or from an uncontrollable inverse map. It swept $K\in\{4,8,16,32,64,128\}$, perturbed exact terminal vertices, and replayed smooth two-parent lambda paths.
 
 ### Results
 
@@ -428,10 +428,10 @@ The final suite reused one target-free field to ask whether the earlier failure 
 
 Saved evidence:
 
-- [final summary](../experiments/09_final_diagnostics/results/h45_final_diagnostics_20260718T120738_714563Z/summary.txt)
-- [parent sweep](../experiments/09_final_diagnostics/results/h45_final_diagnostics_20260718T120738_714563Z/parent_sweep.csv)
-- [local sensitivity](../experiments/09_final_diagnostics/results/h45_final_diagnostics_20260718T120738_714563Z/du_sensitivity.csv)
-- [lambda paths](../experiments/09_final_diagnostics/results/h45_final_diagnostics_20260718T120738_714563Z/lambda_path.csv)
+- [Experiment 09 summary](../experiments/09_parent_capacity_sensitivity_paths/results/h45_final_diagnostics_20260718T120738_714563Z/summary.txt)
+- [parent sweep](../experiments/09_parent_capacity_sensitivity_paths/results/h45_final_diagnostics_20260718T120738_714563Z/parent_sweep.csv)
+- [local sensitivity](../experiments/09_parent_capacity_sensitivity_paths/results/h45_final_diagnostics_20260718T120738_714563Z/du_sensitivity.csv)
+- [lambda paths](../experiments/09_parent_capacity_sensitivity_paths/results/h45_final_diagnostics_20260718T120738_714563Z/lambda_path.csv)
 
 ### Conclusion
 
@@ -446,34 +446,34 @@ Experiment 10 held target selection, four $d_1$ parent identities, particle perm
 1. fit one shared lambda or one lambda per particle;
 2. fit those coefficients at $d_1$ or at $d_u$.
 
-It also swept particles per source from $P=1$ through $P=10$. The first run was interrupted after 16 of 30 conditions, leaving seed 42 complete and seed 43 complete through $P=6$. The resulting 64 completed method rows are an unbalanced partial grid, not a finished three-seed estimate.
+It also swept particles per source from $P=1$ through $P=10$. The complete run covered all 30 conditions for seeds 45, 46, and 47, producing 120 method rows. The earlier interrupted run remains preserved as additional partial evidence.
 
-### Partial results
+### Results
 
-- replay beat same-lambda direct $d_1$ interpolation in only $3/64$ method rows;
-- median EFS/direct ratios were $1.256$ for shared $d_1$, $1.165$ for shared $d_u$, $1.278$ for per-particle $d_1$, and $1.241$ for per-particle $d_u$;
-- median arrival RMSE was $0.481$, $0.463$, $0.340$, and $0.402$, respectively;
-- shared $d_u$ won 9 paired arrival comparisons and shared $d_1$ won 6;
-- per-particle $d_1$ won 10 comparisons and per-particle $d_u$ won 4;
-- the three ties were the $P=1$ controls, where shared and per-particle methods agreed exactly;
-- no completed EFS condition was invalid;
-- the Experiment 07 shared-$d_u$, $P=10$, seed-42 metrics reproduced within absolute differences of approximately $10^{-12}$ to $3\times10^{-10}$.
+- replay beat same-lambda direct $d_1$ interpolation in only $10/120$ full-sweep method rows;
+- the formal shared-$d_1$ and shared-$d_u$ methods each won only $2/30$ rows;
+- median EFS/direct ratios were $1.199$ for shared $d_1$, $1.120$ for shared $d_u$, $1.235$ for per-particle $d_1$, and $1.191$ for per-particle $d_u$;
+- the first partial sweep and complete sweep together recorded 13 replay wins and 171 losses;
+- across both sweeps, shared $d_1$ won 23 paired frame comparisons, shared $d_u$ won 21, and 2 were tied;
+- per-particle lambdas improved representation capacity, but passive replay still erased most of that gain;
+- all 30 complete-sweep conditions were valid, and the $P=1$ shared and per-particle controls agreed exactly.
 
 Saved evidence:
 
+- [complete sweep summary](../experiments/10_lambda_frame_particle_sweep/results/002_20260720T200720_834951Z_seed45-46-47/summary.txt)
+- [complete aggregate metrics](../experiments/10_lambda_frame_particle_sweep/results/002_20260720T200720_834951Z_seed45-46-47/particle_sweep.csv)
+- [complete comparison figure](../experiments/10_lambda_frame_particle_sweep/results/002_20260720T200720_834951Z_seed45-46-47/particle_sweep.png)
 - [partial sweep summary](../experiments/10_lambda_frame_particle_sweep/results/001_20260720T111809_739219Z_seed42-43-44/summary.txt)
-- [partial aggregate metrics](../experiments/10_lambda_frame_particle_sweep/results/001_20260720T111809_739219Z_seed42-43-44/particle_sweep.csv)
-- [partial comparison figure](../experiments/10_lambda_frame_particle_sweep/results/001_20260720T111809_739219Z_seed42-43-44/particle_sweep.png)
 
 ### Interpretation
 
-The frame result is mixed. Shared coefficients favored $d_u$ more often, while the higher-capacity per-particle control favored $d_1$. This interaction does not establish one universally correct fitting frame. It indicates that representation capacity and coordinate-frame transfer are entangled.
+The shared-frame comparison is effectively tied across both runs. Fitting at $d_u$ reduced terminal-frame error as designed, while fitting at $d_1$ reduced $d_1$ representation error. Neither advantage transferred reliably through replay. Representation capacity and coordinate-frame transfer are therefore separate from replay distortion.
 
-The replay result is much clearer and negative. Nearly every completed row was worse than its own same-lambda direct interpolation. Per-particle $d_1$ reduced absolute arrival error, but it is not the formal shared-lambda operator and EFS still worsened its direct baseline in every completed condition.
+The replay result is much clearer and negative. Most rows were worse than their own same-lambda direct interpolation. Per-particle lambdas are not the formal shared-lambda operator, and their extra capacity did not repair the replay step.
 
 ### Conclusion
 
-Partial and statistically incomplete, but already negative for the claim that changing the lambda frame repairs passive replay. The remaining grid can measure seed variability more cleanly; it is unlikely to reverse the observed 61-of-64 loss count without a qualitatively different seed distribution.
+Experiment 10 is the final stop experiment for this route. Changing the lambda frame does not rescue passive replay, and the complete sweep confirms rather than reverses the earlier negative results. This remains synthetic mechanism evidence, not a molecular-validity result or a formal disproof on meaningful aligned latents.
 
 ## Combined scientific conclusion
 

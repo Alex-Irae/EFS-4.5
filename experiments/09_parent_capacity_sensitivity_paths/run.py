@@ -1,4 +1,4 @@
-"""Run the final three single-plane H4.5 diagnostics.
+"""Run the H4.5 parent-capacity, sensitivity, and path diagnostics.
 
 Purpose:
     Reuse one target-free EFS history per seed for a parent-count sweep,
@@ -92,7 +92,7 @@ def _new_run_directory(output_root: Path) -> Path:
     """Create one timestamped result directory without overwriting."""
     output_root.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S_%fZ")
-    directory = output_root / f"h45_final_diagnostics_{stamp}"
+    directory = output_root / f"h45_parent_capacity_sensitivity_paths_{stamp}"
     directory.mkdir(exist_ok=False)
     return directory
 
@@ -1038,7 +1038,7 @@ def _build_summary(
 
 def _summary_text(summary: dict[str, object]) -> str:
     """Render the most important JSON summary values as plain text."""
-    lines = ["H4.5 final diagnostics", "", f"decision: {summary.get('decision', 'incomplete')}", ""]
+    lines = ["H4.5 parent-capacity, sensitivity, and path diagnostics", "", f"decision: {summary.get('decision', 'incomplete')}", ""]
     if "decision_inputs" in summary:
         lines.append("decision inputs:")
         for name, value in dict(summary["decision_inputs"]).items():
@@ -1169,8 +1169,10 @@ def run(args: argparse.Namespace) -> Path:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    """Define the final experiment CLI."""
-    parser = argparse.ArgumentParser(description="Run final single-plane H4.5 diagnostics.")
+    """Define the Experiment 09 diagnostics CLI."""
+    parser = argparse.ArgumentParser(
+        description="Run H4.5 parent-capacity, sensitivity, and path diagnostics."
+    )
     parser.add_argument(
         "--experiments",
         nargs="+",
